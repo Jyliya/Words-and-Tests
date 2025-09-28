@@ -1,0 +1,156 @@
+/* body {
+    padding: 0;
+    margin: 0;
+} */
+
+ul {
+    display: inline-table;
+    /* margin-left: 10%; */
+    list-style: none;
+    /* max-width: 400px; */
+}
+
+li,
+label {
+    padding: 5px;
+    margin-left: 5%;
+    font-size: large;
+    /* max-width: 300px; */
+}
+
+label {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+a {
+    font-size: x-large;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: darkred;
+    display: inline;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    #definitions {
+        display: none;
+    }
+
+    li,
+    label {
+        padding: 3px;
+        font-size: medium;
+    }
+
+    label {
+        font-size: large;
+    }
+
+    ul {
+        display: inline-table;
+        list-style: none;
+        /* margin-left: 5%; */
+    }
+
+    a {
+        font-size: large;
+    }
+}
+
+p {
+    display: inline;
+    font-size: large;
+}
+
+#guessed {
+    text-align: right;
+}
+
+div {
+    display: block;
+}
+
+#form-block {
+    max-width: 600px;
+    max-height: 600px;
+    align-self: center;
+    margin: auto;
+    margin-top: 12%;
+    border: 2px solid black;
+    padding: 2%;
+    display: none;
+}
+
+#test-choice {
+    text-align: center;
+    /* margin: auto; */
+    padding: 10px;
+    /* display: none; */
+}
+
+input {
+    margin: 5px;
+}
+
+button {
+    font-size: large;
+    margin: 5px;
+}
+
+select {
+    font-size: medium;
+    margin: 5px;
+}
+
+#congratulation-block {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-top: 12%;
+    border: 2px solid black;
+    max-width: 600px;
+    max-height: 600px;
+    display: none;
+}
+
+#word-block {
+    /* text-align: center; */
+    margin: auto;
+    /* text-align: center; */
+    padding: 10px;
+    /* margin-top: 12%; */
+    border: 2px solid black;
+    max-width: 410px;
+    /* max-height: 600px;  */
+    /* display: block; */
+}
+
+table, tr, td {
+    /* border: 2px solid black;
+    border-collapse: collapse; */
+    /* margin: 10px; */
+    padding: 5px;
+    font-size: large;
+    text-align: left;
+}
+
+#word-table {
+    margin: 0px auto;
+}
+
+td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.name {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="icon" type="image/x-icon" href="/rainbow_cat.gif">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Words</a>
+        <!-- <a href="https://jyliya.github.io/Board-Game/">Game</a> -->
+    </header>
+    <div id="test-choice">
+        <button class="test-type" id="defin-test" value="definitions">Guess words by definitions</button> </br>
+        <button class="test-type" id="transl-test" value="translations">Guess words by translations</button> </br>
+        <button class="test-type" id="words-test" value="words">Guess translations to words</button> </br>
+    </div>
+    <div id="form-block">
+        <p id="question"></p>
+
+        <form>
+            <input type="radio" name="answer" id="a1">
+            <p id="answ1"></p> </br>
+            <input type="radio" name="answer" id="a2">
+            <p id="answ2"></p> </br>
+            <input type="radio" name="answer" id="a3">
+            <p id="answ3"></p> </br>
+            <input type="radio" name="answer" id="a4">
+            <p id="answ4"></p> </br>
+            <input type="button" value="Next question" id="next">
+        </form>
+        <div id="guessed">
+            <p>All: <span id="all-count">0</span>/30</p> </br>
+            <!-- <p>Correct: <span id="correct-count">0</span>/30</p> -->
+        </div>
+        <script src="super function.js"></script>
+    </div>
+    <div id="congratulation-block">
+        <h1>Congratulations!</h1>
+        <p>You've guessed correctly <span id="correct-count"></span> questions out of 30!</p> </br> </br>
+        <button>OK</button>
+    </div>
+</body>
+
+</html>
