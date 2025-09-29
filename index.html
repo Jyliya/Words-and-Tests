@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Words</title>
-    <link rel="icon" type="image/x-icon" href="/rainbow_cat.gif">
+    <link rel="icon" type="image/x-icon" href="/dictionary.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,46 +14,15 @@
         <a href="test.html">Test</a>
         <!-- <a href="https://jyliya.github.io/Board-Game/">Game</a> -->
     </header>
-    <label>Sort:</label>
+    <p class="name">Sort:</p>
     <select name="type">
         <option value="none" selected>None</option>
         <option value="alphabet">By alphabet</option>
-        <option value="categoty">By categoty</option> <!-- цей елемент буде обраний через атрибут select  -->
+        <option value="category">By categoty</option>
         <option value="type">By type</option>
-        <!-- <option value="CHF">Swiss Franc</option> -->
     </select>
     </br>
-    <!-- <template>
-        <h1 id=""></h1>
-        <ul id="word">
-            <li></li>
-        </ul>
-        <ul id="translation">
-            <li></li>
-        </ul>
-    </template> -->
-    <template>
-        <table>
-            <label></label>
-        </table>
-    </template>
     <div id="word-block">
-        <!-- <ul id="words">
-            <label>Word</label>
-        </ul>
-        <ul id="translations">
-            <label>Translation</label>
-        </ul>
-        <ul id="definitions" style="display: none;">
-            <label>Definition</label>
-        </ul> -->
-
-        <table id="word-table">
-            <tr>
-                <td class="name">Word</td>
-                <td class="name">Translation</td>
-            </tr>
-        </table>
     </div>
     <script src="script.js"></script>
 </body>
