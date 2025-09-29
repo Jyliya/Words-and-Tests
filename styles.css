@@ -1,13 +1,6 @@
-/* body {
-    padding: 0;
-    margin: 0;
-} */
-
 ul {
     display: inline-table;
-    /* margin-left: 10%; */
     list-style: none;
-    /* max-width: 400px; */
 }
 
 li,
@@ -15,7 +8,6 @@ label {
     padding: 5px;
     margin-left: 5%;
     font-size: large;
-    /* max-width: 300px; */
 }
 
 label {
@@ -55,7 +47,6 @@ header {
     ul {
         display: inline-table;
         list-style: none;
-        /* margin-left: 5%; */
     }
 
     a {
@@ -89,9 +80,7 @@ div {
 
 #test-choice {
     text-align: center;
-    /* margin: auto; */
     padding: 10px;
-    /* display: none; */
 }
 
 input {
@@ -120,21 +109,13 @@ select {
 }
 
 #word-block {
-    /* text-align: center; */
     margin: auto;
-    /* text-align: center; */
     padding: 10px;
-    /* margin-top: 12%; */
     border: 2px solid black;
     max-width: 410px;
-    /* max-height: 600px;  */
-    /* display: block; */
 }
 
 table, tr, td {
-    /* border: 2px solid black;
-    border-collapse: collapse; */
-    /* margin: 10px; */
     padding: 5px;
     font-size: large;
     text-align: left;
@@ -147,6 +128,7 @@ table, tr, td {
 td {
     padding-left: 15px;
     padding-right: 15px;
+    vertical-align: top;
 }
 
 .name {
