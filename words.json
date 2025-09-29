@@ -1612,7 +1612,7 @@
         },
         {
             "word": "cuisine",
-            "translation": "кахня",
+            "translation": "кухня",
             "category": "Food",
             "type": "noun",
             "definition": "A style of cooking that is popular in a certain region."
@@ -2900,3 +2900,4 @@
         }
     ]
 }
+
