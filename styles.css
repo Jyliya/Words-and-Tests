@@ -7,6 +7,10 @@ a {
     display: inline;
 }
 
+#results {
+    display: none;
+}
+
 header {
     text-align: center;
     border-bottom: 2px solid black;
@@ -34,6 +38,10 @@ header {
 
     a {
         font-size: large;
+    }
+
+    #results {
+        display: inline;
     }
 }
 
@@ -179,3 +187,4 @@ button:hover{
     background-color: rgb(40, 39, 39);
     color: white;
 }
+
