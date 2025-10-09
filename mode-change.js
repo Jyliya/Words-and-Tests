@@ -2,7 +2,7 @@ let mode = localStorage.getItem("mode");
 
 if (mode == "night") {
     document.body.classList.toggle("night-mode");
-    if (window.location.pathname == "/index.html") {
+    if (window.location.pathname == "/Words-and-Tests/index.html") {
         document.querySelector("select").classList.toggle("night-mode");
     }
     document.querySelector("header").classList.toggle("night-mode");
@@ -14,7 +14,7 @@ document.querySelector("#mode").addEventListener("click", () => {
     let mode = localStorage.getItem("mode");
     if (mode == "night") {
         document.body.classList.toggle("night-mode");
-        if (window.location.pathname == "/index.html") {
+        if (window.location.pathname == "/Words-and-Tests/index.html") {
             document.querySelector("select").classList.toggle("night-mode");
         }
         document.querySelector("header").classList.toggle("night-mode");
@@ -24,7 +24,7 @@ document.querySelector("#mode").addEventListener("click", () => {
     }
     else {
         document.body.classList.toggle("night-mode");
-        if (window.location.pathname == "/index.html") {
+        if (window.location.pathname == "/Words-and-Tests/index.html") {
             document.querySelector("select").classList.toggle("night-mode");
         }
         document.querySelector("header").classList.toggle("night-mode");
@@ -33,4 +33,5 @@ document.querySelector("#mode").addEventListener("click", () => {
         localStorage.setItem("mode", "night");
     }
 })
+
 
