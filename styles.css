@@ -1,26 +1,9 @@
-ul {
-    display: inline-table;
-    list-style: none;
-}
-
-li,
-label {
-    padding: 5px;
-    margin-left: 5%;
-    font-size: large;
-}
-
-label {
-    text-decoration: underline;
-    font-size: x-large;
-}
-
 a {
     font-size: x-large;
     padding: 5px;
     margin: 10px;
     text-decoration: none;
-    color: darkred;
+    color:crimson;
     display: inline;
 }
 
@@ -80,11 +63,14 @@ div {
 
 #test-choice {
     text-align: center;
+    margin-top: 12%;
     padding: 10px;
 }
 
 input {
     margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
 
 button {
@@ -93,6 +79,7 @@ button {
 }
 
 select {
+    font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     margin: 5px;
 }
@@ -115,14 +102,12 @@ select {
     max-width: 410px;
 }
 
-table, tr, td {
+table,
+tr,
+td {
     padding: 5px;
     font-size: large;
     text-align: left;
-}
-
-#word-table {
-    margin: 0px auto;
 }
 
 td {
@@ -135,4 +120,62 @@ td {
     text-decoration: underline;
     font-weight: bold;
     font-size: larger;
+}
+
+h1 {
+    text-align: center;
+}
+
+#result-box {
+    margin: auto;
+    padding: 10px;
+    max-width: 300px;
+}
+
+#result-table td {
+    border: 2px solid black;
+}
+
+#result-table {
+    border-collapse: collapse;
+}
+
+#answ-input {
+    font-size: large;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    border: 3px solid lightcoral;
+    background-color: white;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: lightcoral;
+}
+
+#mode-block {
+    display: block;
+    text-align: right;
+}
+
+#mode {
+    border: 1px solid grey;
+    font-size: medium;
+}
+
+#mode:hover {
+    background-color: grey;
+}
+
+#smt {
+    display: flex;
+    justify-content:space-between;
+}
+
+.night-mode {
+    background-color: rgb(40, 39, 39);
+    color: white;
 }
