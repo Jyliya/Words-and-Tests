@@ -18,7 +18,7 @@ document.querySelector("select").addEventListener("change", (e) => {
     type = e.target.value;
     document.querySelector("#sorted").remove();
     sort(dataArr)
-});
+}); //Виклик сортування
 
 function sort(arr) {
     if (type == undefined) {
@@ -79,7 +79,7 @@ function sort(arr) {
 
     }
     document.querySelector("#word-block").appendChild(table)
-}
+} // Сортування
 
 function addWordToATable(elem) {
     let tr = document.createElement("tr");
@@ -90,4 +90,10 @@ function addWordToATable(elem) {
     tr.appendChild(td1);
     tr.appendChild(td2);
     return tr;
-}
+} // Додавання слів до таблиці (на сторінці)
+
+document.addEventListener("keydown", (e) => {
+    if (e.code == "KeyA" && e.shiftKey) {
+        window.location.href = "/results.html"
+    }
+}) //Відкриття сторінки з результатами
