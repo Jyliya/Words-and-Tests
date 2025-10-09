@@ -239,7 +239,7 @@ document.addEventListener("keydown", (e) => {
     if (e.code == "KeyA" && e.shiftKey) {
         window.location.href = "/Words-and-Tests/results.html"
     }
-})
+}) //Відкриття сторінки з результатами
 
 document.querySelector("#answ-input").addEventListener("keydown", (e) => {
     if (e.code == "Enter") {
@@ -248,3 +248,4 @@ document.querySelector("#answ-input").addEventListener("keydown", (e) => {
     }
 
 })
+
