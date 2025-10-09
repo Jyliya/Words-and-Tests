@@ -182,7 +182,7 @@ function checkAnswer() {
 function checkRand(num, array) {
     do {
         if (array.includes(num)) {
-            num = getRandom(0, (dataArr.length - 1));)
+            num = getRandom(0, (dataArr.length - 1));
             if (qNums.length == dataArr.length) {
                 qNums = [];
                 localStorage.removeItem("questions used");
@@ -248,4 +248,5 @@ document.querySelector("#answ-input").addEventListener("keydown", (e) => {
     }
 
 })
+
 
