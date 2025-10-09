@@ -1,5 +1,4 @@
 let results = document.cookie;
-// console.log(results)
 let types = [];
 let values = [];
 let dates = [];
@@ -19,7 +18,6 @@ function getItem(type, index, array) {
             endRes = "-";
             break
         case "date":
-            // console.log(index + " " + (types.length-1))
             res = `result${index}-${types[types.length-1]}-`
             endRes = "="
             break
@@ -39,7 +37,6 @@ function getItem(type, index, array) {
         }
         let result = results.substring(start, end);
         array.push(result)
-        // console.log(index)
         return result
     }
     else {
@@ -56,22 +53,13 @@ do {
     if (index > 200) {
         break;
     }
-    // arrIndex++;
     index++;
 }
 while (true)
 
-// console.log(formatedDates)
-
-// document.querySelector("#result-table");
-
 dates.forEach(date => {
-    // console.log(date);
     underline = date.indexOf("_")
-    // console.log(underline)
-
     let formatedDate = months[date.substring(underline+1, date.length)] + " " + date.substring(0, underline);
-    // console.log(formatedDate)
     formatedDates.push(formatedDate)
 })
 
@@ -87,4 +75,5 @@ function createTd(item, tr) {
     let td = document.createElement("td");
     td.textContent = item;
     tr.append(td)
+
 }
