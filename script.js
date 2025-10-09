@@ -1,9 +1,9 @@
 let data = fetch("words.json");
 let dataArr = [];
 let type;
-let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-let categories = ['Family', 'Clothes', 'Body parts', 'Animals', 'Colors', 'Characteristics', 'Food', 'Furniture/household items', 'Places', 'Geography', 'Transport', 'Nature/plants', 'Insects', 'Mood', 'Pets', 'Professions', 'School', 'Sport', 'Shops', 'Space', 'Time', 'Weather/seasons', 'Literature', 'Work', 'Objects/things', 'Adjectives', 'Adverbs', 'Verbs', 'Phrases/expressions', 'Prepositions', 'Exclamations'];
-let types = ['noun', 'adjective', 'verb', 'adverb', 'pronoun', 'exclamation', "preposition"];
+let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w'];
+let categories = ['Art', 'Family', 'Clothes', 'Body parts', 'Animals', 'Colors', 'Characteristics', 'Emotions/qualities', 'Food', 'Furniture/household items', 'Places', 'Geography', 'Transport', 'Technology/devices', 'Nature/plants', 'Insects', 'Mood', 'Pets', 'Professions', 'School', 'Sport', 'Shops', 'Space', 'Time', 'Weather/seasons', 'Literature', 'Work', 'Objects/things', 'Abstract nouns', 'Adjectives', 'Adverbs', 'Verbs', 'Phrases/expressions', 'Prepositions', 'Exclamations'];
+let types = ['noun', 'adjective', 'verb', 'adverb', 'pronoun', 'exclamation', "preposition", "phrase"];
 
 data
     .then(response => response.json())
