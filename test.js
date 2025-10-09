@@ -1,5 +1,3 @@
-// import swal from 'sweetalert';
-// let swal = new swal
 let data = fetch("words.json");
 let dataArr = [];
 let qNums = localStorage.getItem("used questions");
@@ -96,7 +94,6 @@ function getNewQuestion() {
             else {
                 let randomForArray = checkRand((getRandom(0, (dataArr.length - 1))), aNums);
                 if (randomForArray == randNum) {
-                    // console.log("skipped: " + dataArr[randomForArray].word)
                     i--;
                     continue
                 }
@@ -111,7 +108,6 @@ function getNewQuestion() {
                             randomAnswer = dataArr[randomForArray].translation;
                             break
                     }
-                    // console.log(i + " is " +  answer);
                     form.querySelector(`#a${i}`).value = randomAnswer;
                     document.querySelector(`#answ${i}`).textContent = randomAnswer;
                     aNums.push(randomForArray);
@@ -119,7 +115,6 @@ function getNewQuestion() {
             }
         }
     }
-    // console.log(correctCount);
     qNums.push(randNum);
     aNums = [];
 }
@@ -160,15 +155,13 @@ function checkAnswer() {
     if (document.querySelector("#answ-input").value != "") {
         if (chosenType == "input") {
             if ((document.querySelector("#answ-input").value.trim()).toLowerCase() == answer) {
-                // console.log("yes");
                 correctCount += 1;
             } // Перевірка на правильну відповідь
             else {
-                // alert("Правильна відповідь: " + answer)
                 new swal({
                     title: "Неправильно!",
                     text: 'Правильна відповідь: ' + answer
-                    // icon: "success"
+
                 });
             }
             document.querySelector("#answ-input").value = "";
@@ -177,7 +170,6 @@ function checkAnswer() {
     else {
         if (form.answer.value != "") {
             if (form.answer.value == answer) {
-                // console.log("yes");
                 correctCount += 1;
             } // Перевірка на правильну відповідь
             for (let i = 0; i < 5; i++) {
@@ -190,10 +182,7 @@ function checkAnswer() {
 function checkRand(num, array) {
     do {
         if (array.includes(num)) {
-            num = getRandom(0, (dataArr.length - 1));
-            // console.log(qNums.length);
-            // console.log(dataArr.length)
-
+            num = getRandom(0, (dataArr.length - 1));)
             if (qNums.length == dataArr.length) {
                 qNums = [];
                 localStorage.removeItem("questions used");
@@ -206,33 +195,6 @@ function checkRand(num, array) {
     } while (true)
     return num
 }//Перевірка на вже викликане питання
-
-// function endTest() {
-//     if (allCount.textContent == 30) {
-//         document.querySelector("#next").value = "Finish"
-//     }
-//     if (allCount.textContent > 30) {
-//         form.querySelector("#next").removeEventListener("click", getNewQuestion);
-//         document.querySelector("#form-block").style.display = "none";
-//         document.querySelector("#test-choice").style.display = "none";
-//         // alert(`Congratulations. You've gotten ${correctCount.textContent} questions out of 30.`);
-//         document.querySelector("#congratulation-block").style.display = "block";
-//         document.querySelector("#correct-count").textContent = correctCount;
-//         document.querySelector("#congratulation-block").querySelector("button").addEventListener("click", () => {
-//             document.querySelector("#test-choice").style.display = "block";
-//             document.querySelector("#congratulation-block").style.display = "none";
-//         });
-//         localStorage.setItem("used questions", (JSON.stringify(qNums)));
-//         const d = new Date();
-//         // d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//         // let expires = "expires=" + d.toUTCString();
-//         tryN++;
-//         localStorage.setItem("number of tries", (JSON.stringify(tryN)));
-//         document.cookie = `result${tryN}-${chosenType}-${d.getDate()}_${d.getMonth()}=${correctCount}; max-age=604800;`
-//         correctCount = 0;
-//         allCount.textContent = 0;
-//     }
-// }//Перевірка на кількість пройдених питань
 
 function endTest() {
     const nextBtn = document.querySelector("#next");
@@ -273,25 +235,16 @@ buttons.forEach(item => {
     })
 })
 
-// console.log(document.cookie)
-
-// document.addEventListener("keydown", function (e) {
-//     let message = `keydown (Code = ${e.code}, Key = ${e.key})`;
-//     console.log(message);
-// });
-
 document.addEventListener("keydown", (e) => {
     if (e.code == "KeyA" && e.shiftKey) {
-        window.location.href = "/results.html"
+        window.location.href = "/Words-and-Tests/results.html"
     }
 })
 
 document.querySelector("#answ-input").addEventListener("keydown", (e) => {
-    // let message = `keydown (Code = ${e.code}, Key = ${e.key})`;
-    // console.log(message)
     if (e.code == "Enter") {
         e.preventDefault();
-        // document.querySelector("#next").click();
         getNewQuestion();
     }
+
 })
