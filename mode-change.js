@@ -28,6 +28,8 @@ document.querySelector("#mode").addEventListener("click", () => {
         document.querySelectorAll("button").forEach(elem => { elem.classList.toggle("night-mode"); })
         document.querySelectorAll("input").forEach(elem => { elem.classList.toggle("night-mode"); })
         localStorage.setItem("mode", "night");
+        console.log(window.location.pathname);
     }
 })
+
 
