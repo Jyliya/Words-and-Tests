@@ -88,13 +88,13 @@ document.addEventListener("keyup", (e) => {
     switch (e.key) {
         case "ArrowLeft":
             moveRight(cat, 25)
-            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
+            cat.style.backgroundImage = "url('./photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
         case "ArrowRight":
             moveRight(cat, 50)
-            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
+            cat.style.backgroundImage = "url('./photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
@@ -319,3 +319,4 @@ document.addEventListener("keydown", (e) => {
     }
 
 }) //Відкриття сторінки з результатами
+
