@@ -87,12 +87,14 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     switch (e.key) {
         case "ArrowLeft":
-            cat.style.backgroundImage = "url('./photos/cat-sitting.png')";
+            moveRight(cat, 25)
+            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
         case "ArrowRight":
-            cat.style.backgroundImage = "url('./photos/cat-sitting.png')";
+            moveRight(cat, 50)
+            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
@@ -317,4 +319,5 @@ document.addEventListener("keydown", (e) => {
     }
 
 }) //Відкриття сторінки з результатами
+
 
