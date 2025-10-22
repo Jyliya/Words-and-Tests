@@ -256,7 +256,6 @@ function checkAnswer() {
 
     if (chosenAnswer != undefined) {
         if (chosenAnswer == answer) {
-            console.log(chosenAnswer)
             pointSound.play()
             getNewQuestion()
         } // Перевірка на правильну відповідь
@@ -318,3 +317,4 @@ document.addEventListener("keydown", (e) => {
     }
 
 }) //Відкриття сторінки з результатами
+
