@@ -9,13 +9,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    /* display: table-row; */
     display: none;
     max-width: max-content;
     max-height: max-content;
     text-align: center;
     position: absolute;
-    /* border-collapse: collapse; */
 }
 
 .answers {
@@ -29,49 +27,16 @@ p {
     font-size: large;
 }
 
-/* #t {
-    text-align: right;
-}
-
-#timer {
-    text-align: right;
-    font-size: large;
-} */
-
 #game-frame {
-    /* display:contents;
-    border: 2px solid black;
-    max-width: max-content; */
     height: 200px;
     position: relative;
-    /* border-collapse: collapse; */
 }
-
-/* #cat-image2 {
-    background-image: url("cat-walking.gif");
-    width: 150px;
-    height: 100px;
-    vertical-align: bottom;
-} */
-
-/* #cat-image {
-    background-image: url("cat-walking.gif");
-    height: 75px;
-    height: 100px;
-    vertical-align: bottom;
-}  */
-
 #cat-block {
     text-align: left;
     position:absolute;
     bottom: 0;
     background-image: url("/photos/cat-sitting.png");
     background-size: cover;
-    /* vertical-align: bottom; */
-    /* background-position: auto; */
-    /* background-attachment: fixed; */
-    /* height: 64px;
-    width: 150px; */
     height: 75px;
     width: 70px;
 }
@@ -97,28 +62,12 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    /* z-index: 99; */
     position: absolute;
     height: 200px;
     width: 350px;
     border: 2px solid black;
-    /* background-color: white; */
     text-align: center;
 }
-
-/* #start-btn {
-    border: 2px solid orange;
-    border-radius: 15px;
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
-    /* padding: 3px; */
-    /* background-color: white; */
-/* } */
-
-/* #start-btn:hover { */
-    /* background-color: orange; */
-    /* cursor: pointer; */
-/* } */
 
 #info {
     justify-content: space-between;
@@ -126,7 +75,6 @@ p {
 }
 
 #start-screen {
-    /* display: block; */
     max-height: 180px;
 }
 
@@ -139,7 +87,6 @@ button {
     border-radius: 15px;
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
-    /* padding: 3px; */
     background-color: white;
 }
 
@@ -150,27 +97,21 @@ button:hover {
 
 #death-block {
     display: table-row;
-    /* border-collapse: collapse; */
-    /* left: 150px; */
 }
 
 .death {
-    /* border: 1px solid black; */
     width: 180px;
     height: 100px;
     left: 153px;
     z-index: 99;
     position:relative;
-    /* margin: auto; */
     bottom: -18px;
     display: inline-block;
-    /* display: table-cell; */
 }
 
 #mode-block {
     display: block;
     text-align: right;
-    /* font-size: small; */
 }
 
 #mode {
@@ -202,4 +143,5 @@ a {
     text-decoration: none;
     color:crimson;
     display: inline;
+
 }
