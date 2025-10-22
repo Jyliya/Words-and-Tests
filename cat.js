@@ -51,11 +51,11 @@ let questionNumber = document.querySelector("#q-num");
 let recordNum = document.querySelector("#record");
 let recordNumFinish = document.querySelector("#record-finish");
 
-let pointSound = new Audio("Words-and-Tests/sounds/point-sound.wav");
+let pointSound = new Audio("/sounds/point-sound.wav");
 pointSound.volume = 0.1;
-let hurtSound = new Audio("Words-and-Tests/sounds/death-sound.mp3");
+let hurtSound = new Audio("/sounds/death-sound.mp3");
 hurtSound.volume = 0.1;
-let gemeOverSound = new Audio("Words-and-Tests/sounds/game-over-sound.wav");
+let gemeOverSound = new Audio("/sounds/game-over-sound.wav");
 gemeOverSound.volume = 0.1;
 
 startBtn.addEventListener("click", startGame);
@@ -318,4 +318,5 @@ document.addEventListener("keydown", (e) => {
     }
 
 }) //Відкриття сторінки з результатами
+
 
