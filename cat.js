@@ -62,9 +62,6 @@ startBtn.addEventListener("click", startGame);
 
 recordNum.textContent = record;
 recordNumFinish.textContent = record;
-// console.log(recordNum)
-
-// let positions = [{ start: "150px", end: "330px" }, { start: "330px", end: "510px" }, { start: "510px", end: "690px" }, { start: "690px", end: "880px" }]
 
 let deathInt;
 let result;
@@ -73,14 +70,12 @@ let timerTime = 8;
 document.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "ArrowLeft":
-            // catImage.src = "cat-walking2.gif"
             cat.style.backgroundImage = "url('/photos/cat-walking-left.gif')";
             cat.style.height = "64px";
             cat.style.width = "150px";
             moveLeft(cat, 10)
             break
         case "ArrowRight":
-            // catImage.src = "cat-walking2.gif"
             cat.style.backgroundImage = "url('/photos/cat-walking-right.gif')";
             cat.style.height = "64px";
             cat.style.width = "150px";
@@ -92,13 +87,11 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     switch (e.key) {
         case "ArrowLeft":
-            // catImage.src = "cat-sitting.png"
             cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
         case "ArrowRight":
-            // catImage.src = "cat-sitting.png"
             cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
@@ -106,17 +99,11 @@ document.addEventListener("keyup", (e) => {
     }
 })
 
-// document.addEventListener("keydown", (e) => {
-//     console.log(e.key + " " + e.code)
-// })
-
 function moveLeft(element, distance) {
     let left = getComputedStyle(element).left;
-    // console.log(left)
     if (!(left == "0px")) {
         element.style.left = parseInt(left) - distance + "px";
     }
-    // console.log(left)
 }
 
 function moveRight(element, distance) {
@@ -124,7 +111,6 @@ function moveRight(element, distance) {
     if (!(left == "880px")) {
         element.style.left = parseInt(left) + distance + "px";
     }
-    // console.log(left)
 }
 
 let answers = document.querySelectorAll(".answers");
@@ -138,9 +124,6 @@ function checkRand(num, array) {
     do {
         if (array.includes(num)) {
             num = getRandom(0, (dataArr.length - 1));
-            // console.log(qNums.length);
-            // console.log(dataArr.length)
-
             if (qNums.length == dataArr.length) {
                 qNums = [];
                 localStorage.removeItem("questions used");
@@ -177,11 +160,8 @@ function startGame() {
     let index = 0;
     for (div of answers) {
         let dBlock = deathBlocks[index];
-        // console.log(dBlock)
         dBlock.style.backgroundImage = "none";
-        // dBlock.style.backgroundSize = "contain";
         div.style.color = "black";
-        // console.log(dBlock)
         index++;
     }
     questionNumber.textContent = 0;
@@ -247,7 +227,6 @@ function getNewQuestion() {
 }
 
 function checkAnswer() {
-    // let answer;
     if (qNums.length == 0) {
         return
     }
@@ -277,8 +256,6 @@ function checkAnswer() {
 
     if (chosenAnswer != undefined) {
         if (chosenAnswer == answer) {
-            // console.log("yes");
-            // questionNumber += 1;
             console.log(chosenAnswer)
             pointSound.play()
             getNewQuestion()
@@ -305,7 +282,6 @@ function endGame() {
         localStorage.setItem("record", (JSON.stringify(result)));
         record = result;
     }
-    // recordNumFinish.textContent = record;
     recordNum.textContent = record;
 }
 
@@ -333,7 +309,6 @@ function fireDeath(rightAnswer) {
         div.style.color = "white";
         cat.style.backgroundImage = "url('/photos/cat-sitting-hurt.png')"
     }
-    // clearInterval(deathInt);
     setTimeout(endGame, 3000)
 }
 
@@ -341,4 +316,5 @@ document.addEventListener("keydown", (e) => {
     if (e.code == "KeyA" && e.shiftKey) {
         window.location.href = "/results.html"
     }
+
 }) //Відкриття сторінки з результатами
