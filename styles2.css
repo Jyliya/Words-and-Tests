@@ -35,7 +35,7 @@ p {
     text-align: left;
     position:absolute;
     bottom: 0;
-    background-image: url("/photos/cat-sitting.png");
+    background-image: url("Words-and-Tests/photos/cat-sitting.png");
     background-size: cover;
     height: 75px;
     width: 70px;
@@ -46,14 +46,6 @@ p {
     display: table-cell;
     width: 150px;
     background-color: grey;
-}
-
-#underside {
-    background-color: orange;
-    background-image: url("https://media.tenor.com/fdo-vnegQqUAAAAi/fire-fire-emote.gif");
-    background-repeat: repeat-x;
-    background-size: contain;
-    height: 50px;
 }
 
 .info-screen {
@@ -145,3 +137,4 @@ a {
     display: inline;
 
 }
+
