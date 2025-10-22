@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat words</title>
+    <link rel="icon" type="image/x-icon" href="cat.png">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Words</a>
+        <a href="test.html">Test</a>
+    </header>
+    <div id="mode-block"><button id="mode" value="Night mode">Night mode</button></div>
+    <div id="start-screen" class="info-screen">
+        <h1>Cat words!</h1>
+        <p>Record: <span id="record">0</span></p> <br />
+        <button id="start-btn">Start</button>
+    </div>
+    <div id="end-screen" class="info-screen">
+        <h1>You died!</h1>
+        <p>Your result: <span id="result">0</span></p>
+        <p>Record: <span id="record-finish">0</span></p>
+        <button id="finish-btn">Okay</button>
+    </div>
+    <div id="game-block">
+        <div id="game-frame">
+            <div id="info">
+                <p>Question №<span id="q-num">0</span></p>
+                <p id="t">Timer: <span id="timer">5</span></p>
+            </div>
+            <p id="question">Word</p>
+            <div id="death-block">
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+            </div>
+            <div id="cat-block"></div>
+        </div>
+        <div class="side-block"></div>
+        <div class="answers">
+            <p id="answer1">Answer 1</p>
+        </div>
+        <div class="answers">
+            <p id="answer2">Answer 2</p>
+        </div>
+        <div class="answers">
+            <p id="answer3">Answer 3</p>
+        </div>
+        <div class="answers">
+            <p id="answer4">Answer 4</p>
+        </div>
+        <div class="side-block"></div>
+        <!-- <div id="underside"></div> -->
+    </div>
+    <script src="cat.js"></script>
+    <script src="mode-change.js"></script>
+</body>
+
+</html>
