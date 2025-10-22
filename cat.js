@@ -51,11 +51,11 @@ let questionNumber = document.querySelector("#q-num");
 let recordNum = document.querySelector("#record");
 let recordNumFinish = document.querySelector("#record-finish");
 
-let pointSound = new Audio("/sounds/point-sound.wav");
+let pointSound = new Audio("Words-and-Tests/sounds/point-sound.wav");
 pointSound.volume = 0.1;
-let hurtSound = new Audio("/sounds/death-sound.mp3");
+let hurtSound = new Audio("Words-and-Tests/sounds/death-sound.mp3");
 hurtSound.volume = 0.1;
-let gemeOverSound = new Audio("/sounds/game-over-sound.wav");
+let gemeOverSound = new Audio("Words-and-Tests/sounds/game-over-sound.wav");
 gemeOverSound.volume = 0.1;
 
 startBtn.addEventListener("click", startGame);
@@ -70,13 +70,13 @@ let timerTime = 8;
 document.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "ArrowLeft":
-            cat.style.backgroundImage = "url('/photos/cat-walking-left.gif')";
+            cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-walking-left.gif')";
             cat.style.height = "64px";
             cat.style.width = "150px";
             moveLeft(cat, 10)
             break
         case "ArrowRight":
-            cat.style.backgroundImage = "url('/photos/cat-walking-right.gif')";
+            cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-walking-right.gif')";
             cat.style.height = "64px";
             cat.style.width = "150px";
             moveRight(cat, 10)
@@ -87,12 +87,12 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     switch (e.key) {
         case "ArrowLeft":
-            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
+            cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
         case "ArrowRight":
-            cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
+            cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-sitting.png')";
             cat.style.height = "75px";
             cat.style.width = "70px";
             break
@@ -165,7 +165,7 @@ function startGame() {
         index++;
     }
     questionNumber.textContent = 0;
-    cat.style.backgroundImage = "url('/photos/cat-sitting.png')";
+    cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-sitting.png')";
     getNewQuestion()
 }
 
@@ -304,10 +304,10 @@ function fireDeath(rightAnswer) {
         if (div == rightAnswer) {
             continue
         }
-        dBlock.style.backgroundImage = "url('/photos/fire.gif')"
+        dBlock.style.backgroundImage = "url('Words-and-Tests/photos/fire.gif')"
         dBlock.style.backgroundSize = "contain";
         div.style.color = "white";
-        cat.style.backgroundImage = "url('/photos/cat-sitting-hurt.png')"
+        cat.style.backgroundImage = "url('Words-and-Tests/photos/cat-sitting-hurt.png')"
     }
     setTimeout(endGame, 3000)
 }
@@ -318,3 +318,4 @@ document.addEventListener("keydown", (e) => {
     }
 
 }) //Відкриття сторінки з результатами
+
