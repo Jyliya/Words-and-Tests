@@ -172,6 +172,13 @@ function checkAnswer() {
             if (form.answer.value == answer) {
                 correctCount += 1;
             } // Перевірка на правильну відповідь
+            else {
+                new swal({
+                    title: "Неправильно!",
+                    text: 'Правильна відповідь: ' + answer
+                    // icon: "success"
+                });
+            }
             for (let i = 0; i < 5; i++) {
                 form[i].checked = false
             };//Прибирання відмітки
@@ -248,5 +255,6 @@ document.querySelector("#answ-input").addEventListener("keydown", (e) => {
     }
 
 })
+
 
 
