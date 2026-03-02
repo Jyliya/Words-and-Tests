@@ -200,4 +200,5 @@ button:hover{
     height: 100%;
     background-image: url("Snowfall.gif");
     z-index: -1;
+    display: none;
 }
