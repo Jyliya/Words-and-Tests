@@ -202,3 +202,39 @@ button:hover{
     z-index: -1;
     display: none;
 }
+
+#verb-block {
+    margin: auto;
+    padding: 10px;
+    max-width: max-content;
+}
+
+#verbs {
+    border-collapse: collapse;
+}
+
+#verbs tr:hover {
+    background-color: rgb(203, 202, 202);
+}
+
+#verbs td {
+    border: 2px solid black;
+}
+
+#verbs td:hover {
+    background-color: rgb(227, 108, 108);
+}
+
+.headline {
+    font-weight: bold;
+}
+
+.word:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.wordlink {
+    font-size: large;
+    color: black;
+}

@@ -1,9 +1,13 @@
 let data = fetch("words.json");
+let verbsData = fetch("verbs.json");
 let dataArr = [];
-let qNums = localStorage.getItem("used questions");
+let dataVerbsArr = [];
+let qNums = JSON.parse(localStorage.getItem("used questions")) || [];
+let qNumsVerbs = JSON.parse(localStorage.getItem("used verbs")) || [];;
 let aNums = [];
 let chosenType;
 let tryN = localStorage.getItem("number of tries");
+let resultType;
 
 if (tryN == null) {
     tryN = 0
@@ -19,20 +23,21 @@ else {
     }
 }
 
-if (qNums == null) {
-    qNums = []
-}
-else {
-    qNums = JSON.parse(qNums)
-}
-
-
 
 data
     .then(response => response.json())
     .then(json => {
-        for (item of json["words"]) {
+        for (const item of json["words"]) {
             dataArr.push(item);
+        }
+    })
+    .catch(error => console.error(error));
+
+verbsData
+    .then(response => response.json())
+    .then(json => {
+        for (const item of json["verbs"]) {
+            dataVerbsArr.push(item);
         }
     })
     .catch(error => console.error(error));
@@ -56,14 +61,32 @@ let allCount = document.querySelector("#all-count");
 let correctCount = 0;
 
 function getNewQuestion() {
-    let question;
-    let answer;
-    checkAnswer();
+    let question, answer, length, arrW, arr;
+
+    switch (chosenType) {
+        case "definitions":
+        case "input":
+        case "translations":
+        case "words":
+            arrW = dataArr;
+            arr = qNums;
+            length = dataArr.length;
+            break
+        case "verbSecond":
+        case "verbThird":
+            arrW = dataVerbsArr;
+            arr = qNumsVerbs;
+            length = dataVerbsArr.length;
+            break
+    }
+
+    checkAnswer(arr);
     allCount.textContent = Number(allCount.textContent) + 1;
     endTest();
 
-    let randNum = getRandom(0, (dataArr.length - 1));
-    randNum = checkRand(randNum, qNums);
+    checkFullness(arr, arrW, length)
+    let randNum = getRandom(0, (length - 1));
+    randNum = checkRand(randNum, arr, length - 1);
     let answerNumber = getRandom(1, 4);
 
     switch (chosenType) {
@@ -80,19 +103,31 @@ function getNewQuestion() {
             question = dataArr[randNum].word;
             answer = dataArr[randNum].translation;
             break
+        case "verbSecond":
+            question = dataVerbsArr[randNum].verb;
+            answer = dataVerbsArr[randNum].second;
+            break
+        case "verbThird":
+            question = dataVerbsArr[randNum].verb;
+            answer = dataVerbsArr[randNum].third;
+            break
     }
 
     document.querySelector("#question").textContent = question;
     form.querySelector(`#a${answerNumber}`).value = answer;
     document.querySelector(`#answ${answerNumber}`).textContent = answer;
 
-    if (chosenType != "input") {
+    if (chosenType != "input" && chosenType != "verbSecond" && chosenType != "verbThird") {
         for (let i = 1; i <= 4; i++) {
             if (i == answerNumber) {
                 continue
             }
             else {
-                let randomForArray = checkRand((getRandom(0, (dataArr.length - 1))), aNums);
+                let randomForArray = checkRand(
+                    getRandom(0, arrW.length - 1),
+                    aNums,
+                    arrW.length - 1
+                );
                 if (randomForArray == randNum) {
                     i--;
                     continue
@@ -102,10 +137,10 @@ function getNewQuestion() {
                     switch (chosenType) {
                         case "definitions":
                         case "translations":
-                            randomAnswer = dataArr[randomForArray].word;
+                            randomAnswer = arrW[randomForArray].word;
                             break
                         case "words":
-                            randomAnswer = dataArr[randomForArray].translation;
+                            randomAnswer = arrW[randomForArray].translation;
                             break
                     }
                     form.querySelector(`#a${i}`).value = randomAnswer;
@@ -115,13 +150,13 @@ function getNewQuestion() {
             }
         }
     }
-    qNums.push(randNum);
+    arr.push(randNum);
     aNums = [];
 }
 
 function startTest() {
     let answ = form.querySelectorAll(".answer")
-    if (chosenType == "input") {
+    if (chosenType == "input" || chosenType == "verbSecond" || chosenType == "verbThird") {
         answ.forEach(item => { item.style.display = "none" });
         document.querySelector("#answ-input").hidden = false;
     }
@@ -135,9 +170,9 @@ function startTest() {
     form.querySelector("#next").removeEventListener("click", getNewQuestion);
 }//Прибирання івентліснерів та ховання елементів
 
-function checkAnswer() {
+function checkAnswer(array) {
     let answer;
-    if (qNums.length == 0) {
+    if (array.length == 0) {
         return
     }
 
@@ -145,24 +180,27 @@ function checkAnswer() {
         case "input":
         case "definitions":
         case "translations":
-            answer = dataArr[qNums[qNums.length - 1]].word;
+            answer = dataArr[array[array.length - 1]].word;
             break
         case "words":
-            answer = dataArr[qNums[qNums.length - 1]].translation
+            answer = dataArr[array[array.length - 1]].translation
+            break
+        case "verbSecond":
+            answer = dataVerbsArr[array[array.length - 1]].second;
+            console.log(answer);
+            break
+        case "verbThird":
+            answer = dataVerbsArr[array[array.length - 1]].third;
             break
     }
 
     if (document.querySelector("#answ-input").value != "") {
-        if (chosenType == "input") {
+        if (chosenType == "input" || chosenType == "verbSecond" || chosenType == "verbThird") {
             if ((document.querySelector("#answ-input").value.trim()).toLowerCase() == answer) {
                 correctCount += 1;
             } // Перевірка на правильну відповідь
             else {
-                new swal({
-                    title: "Неправильно!",
-                    text: 'Правильна відповідь: ' + answer
-
-                });
+                showRightAnswer(answer);
             }
             document.querySelector("#answ-input").value = "";
         }
@@ -173,11 +211,7 @@ function checkAnswer() {
                 correctCount += 1;
             } // Перевірка на правильну відповідь
             else {
-                new swal({
-                    title: "Неправильно!",
-                    text: 'Правильна відповідь: ' + answer
-                    // icon: "success"
-                });
+                showRightAnswer(answer);
             }
             for (let i = 0; i < 5; i++) {
                 form[i].checked = false
@@ -186,22 +220,40 @@ function checkAnswer() {
     }
 }
 
-function checkRand(num, array) {
-    do {
-        if (array.includes(num)) {
-            num = getRandom(0, (dataArr.length - 1));
-            if (qNums.length == dataArr.length) {
-                qNums = [];
-                localStorage.removeItem("questions used");
-                break
-            }
-        }
-        else {
-            break
-        }
-    } while (true)
-    return num
+function showRightAnswer(answer) {
+    new swal({
+        title: "Неправильно!",
+        text: 'Правильна відповідь: ' + answer
+    });
+}//Показ правильного відповіді
+
+function checkRand(num, array, max) {
+    if (array.length > max) return 0;
+
+    while (array.includes(num)) {
+        num = getRandom(0, max);
+    }
+    return num;
 }//Перевірка на вже викликане питання
+
+function checkFullness(arrayQue, arrayWords, length) {
+    console.log(arrayWords);
+    console.log(arrayQue);
+
+    if (arrayQue.length >= arrayWords.length) {
+        console.log("yes");
+        if (arrayQue == qNums) {
+            console.log("yes");
+            arrayQue.length = 0;
+            localStorage.removeItem("used questions");
+        }
+        if (arrayQue == qNumsVerbs) {
+            console.log("yes");
+            arrayQue.length = 0;
+            localStorage.removeItem("used verbs");
+        }
+    }
+}
 
 function endTest() {
     const nextBtn = document.querySelector("#next");
@@ -209,7 +261,7 @@ function endTest() {
     const choiceBlock = document.querySelector("#test-choice");
     const congratsBlock = document.querySelector("#congratulation-block");
 
-    if (allCount.textContent == 30) {
+    if (Number(allCount.textContent) === 30) {
         nextBtn.value = "Finish"
     }
     if (allCount.textContent > 30) {
@@ -221,7 +273,18 @@ function endTest() {
             choiceBlock.style.display = "block";
             congratsBlock.style.display = "none";
         });
-        localStorage.setItem("used questions", (JSON.stringify(qNums)));
+        switch (chosenType) {
+            case "definitions":
+            case "input":
+            case "translations":
+            case "words":
+                localStorage.setItem("used questions", (JSON.stringify(qNums)));
+                break
+            case "verbSecond":
+            case "verbThird":
+                localStorage.setItem("used verbs", (JSON.stringify(qNumsVerbs)));
+                break
+        }
         const d = new Date();
         tryN++;
         localStorage.setItem("number of tries", (JSON.stringify(tryN)));
@@ -249,12 +312,9 @@ document.addEventListener("keydown", (e) => {
 }) //Відкриття сторінки з результатами
 
 document.querySelector("#answ-input").addEventListener("keydown", (e) => {
-    if (e.code == "Enter") {
+    if (e.code == "Enter" || e.code == "NumpadEnter") {
         e.preventDefault();
         getNewQuestion();
     }
 
 })
-
-
-

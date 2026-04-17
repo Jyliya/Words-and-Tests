@@ -87,6 +87,7 @@ function addWordToATable(elem) {
     let td2 = document.createElement("td");
     td1.textContent = elem.word;
     td2.textContent = elem.translation;
+    td1.classList.add("word")
     tr.appendChild(td1);
     tr.appendChild(td2);
     return tr;
