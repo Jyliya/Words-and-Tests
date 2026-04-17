@@ -288,25 +288,11 @@
             "definition": "A decoration for clothes similiar to a tie."
         },
         {
-            "word": "worldwide",
-            "translation": "всесвітній",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Something that extends througout the world."
-        },
-        {
             "word": "cost",
             "translation": "коштувати/ціна",
             "category": "Shops",
             "type": "verb",
             "definition": "To have a price."
-        },
-        {
-            "word": "decide",
-            "translation": "вирішувати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To make a choice."
         },
         {
             "word": "occasion",
@@ -316,20 +302,6 @@
             "definition": "Some event."
         },
         {
-            "word": "homemade",
-            "translation": "домашній",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Something made at home."
-        },
-        {
-            "word": "reserve",
-            "translation": "бронювати/резервувати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To take something in andvance."
-        },
-        {
             "word": "arrange",
             "translation": "влаштовувати",
             "category": "Verbs",
@@ -337,81 +309,11 @@
             "definition": "A synonym of the word 'organize'."
         },
         {
-            "word": "sour",
-            "translation": "кислий",
-            "category": "Food",
-            "type": "adjective",
-            "definition": "An antonym of the word 'sweet'."
-        },
-        {
-            "word": "post office",
-            "translation": "пошта",
-            "category": "Places",
-            "type": "noun",
-            "definition": "A building where you go to send your letters."
-        },
-        {
-            "word": "flour",
-            "translation": "борошно",
-            "category": "Food",
-            "type": "noun",
-            "definition": "White powder that is used in baking."
-        },
-        {
-            "word": "stew",
-            "translation": "тушкувати",
-            "category": "Food",
-            "type": "verb",
-            "definition": "To cook slowly in a liquid."
-        },
-        {
-            "word": "develop",
-            "translation": "розвивати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To grow or improve over time."
-        },
-        {
             "word": "century",
             "translation": "століття",
             "category": "Time",
             "type": "noun",
             "definition": "A period of 100 years."
-        },
-        {
-            "word": "theatre",
-            "translation": "театр",
-            "category": "Places",
-            "type": "noun",
-            "definition": "A place where plays, shows, or movies are performed."
-        },
-        {
-            "word": "shirt",
-            "translation": "сорочка",
-            "category": "Clothes",
-            "type": "noun",
-            "definition": "A piece of clothing worn on the upper body."
-        },
-        {
-            "word": "salmon",
-            "translation": "лосось",
-            "category": "Food",
-            "type": "noun",
-            "definition": "A pink fish eaten as food."
-        },
-        {
-            "word": "shine",
-            "translation": "світитися",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To give out bright light."
-        },
-        {
-            "word": "ray",
-            "translation": "промінь",
-            "category": "Objects/things",
-            "type": "noun",
-            "definition": "A _______ of sunlight."
         },
         {
             "word": "thunder",
@@ -440,13 +342,6 @@
             "category": "Characteristics",
             "type": "adjective",
             "definition": "Unpleasant or mean."
-        },
-        {
-            "word": "dandelion",
-            "translation": "кульбаба",
-            "category": "Nature/plants",
-            "type": "noun",
-            "definition": "A yellow flower that grows in fields."
         },
         {
             "word": "relief",
@@ -491,46 +386,11 @@
             "definition": "Neat and clean."
         },
         {
-            "word": "belong",
-            "translation": "належати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To be the property of someone. Or to be a member of some group."
-        },
-        {
             "word": "hill",
             "translation": "пагорб",
             "category": "Geography",
             "type": "noun",
             "definition": "A raised area of land smaller than a mountain."
-        },
-        {
-            "word": "royal",
-            "translation": "королівський",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Related to a king or queen."
-        },
-        {
-            "word": "begin",
-            "translation": "починати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To start doing something."
-        },
-        {
-            "word": "peninsula",
-            "translation": "півострів",
-            "category": "Geography",
-            "type": "noun",
-            "definition": "A piece of land surrounded by water on three sides."
-        },
-        {
-            "word": "luckily",
-            "translation": "на щастя",
-            "category": "Adverbs",
-            "type": "adverb",
-            "definition": "By good luck."
         },
         {
             "word": "suddenly",
@@ -547,20 +407,6 @@
             "definition": "To think something is true."
         },
         {
-            "word": "ancient",
-            "translation": "давній",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Very old; from a long time ago."
-        },
-        {
-            "word": "construction",
-            "translation": "будівництво",
-            "category": "Work",
-            "type": "noun",
-            "definition": "The process of building something."
-        },
-        {
             "word": "ceiling",
             "translation": "стеля",
             "category": "Furniture/household items",
@@ -575,39 +421,11 @@
             "definition": "A pillow for a sofa."
         },
         {
-            "word": "fireplace",
-            "translation": "камін",
-            "category": "Furniture/household items",
-            "type": "noun",
-            "definition": "A space in a house for a fire."
-        },
-        {
             "word": "remote",
             "translation": "пульт",
             "category": "Furniture/household items",
             "type": "noun",
             "definition": "A device used to control a TV."
-        },
-        {
-            "word": "area",
-            "translation": "місцевість",
-            "category": "Places",
-            "type": "noun",
-            "definition": "A part of a region or space."
-        },
-        {
-            "word": "glory",
-            "translation": "слава",
-            "category": "Emotions/qualities",
-            "type": "noun",
-            "definition": "_______ to Ukraine."
-        },
-        {
-            "word": "church",
-            "translation": "церква",
-            "category": "Places",
-            "type": "noun",
-            "definition": "A building used for religious services."
         },
         {
             "word": "correct",
@@ -629,13 +447,6 @@
             "category": "Clothes",
             "type": "noun",
             "definition": "A small square piece of cloth for wiping the face or nose."
-        },
-        {
-            "word": "participate",
-            "translation": "брати участь",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To take part in an activity or event."
         },
         {
             "word": "bonfire",
@@ -687,46 +498,11 @@
             "definition": "A small number of things or people."
         },
         {
-            "word": "whistle",
-            "translation": "свистіти",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To make a high-pitched sound by blowing air through lips or teeth."
-        },
-        {
             "word": "honor",
             "translation": "честь",
             "category": "Emotions/qualities",
             "type": "noun",
             "definition": "High respect."
-        },
-        {
-            "word": "hang out",
-            "translation": "проводити час/тусити",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To spend time with friends."
-        },
-        {
-            "word": "celebration",
-            "translation": "святкування",
-            "category": "Abstract nouns",
-            "type": "noun",
-            "definition": "An event, special occasion."
-        },
-        {
-            "word": "protect",
-            "translation": "захищати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To keep someone or something safe."
-        },
-        {
-            "word": "soap",
-            "translation": "мило",
-            "category": "Furniture/household items",
-            "type": "noun",
-            "definition": "Something that you use to wash hands."
         },
         {
             "word": "available",
@@ -743,13 +519,6 @@
             "definition": "An antonym of the words 'correct' and 'true'."
         },
         {
-            "word": "invent",
-            "translation": "винаходити",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To create something new."
-        },
-        {
             "word": "remind",
             "translation": "нагадувати",
             "category": "Verbs",
@@ -762,27 +531,6 @@
             "category": "Places",
             "type": "noun",
             "definition": "A famous thing or place that tourists look at."
-        },
-        {
-            "word": "ship",
-            "translation": "корабель",
-            "category": "Transport",
-            "type": "noun",
-            "definition": "A large boat for traveling on water."
-        },
-        {
-            "word": "residence",
-            "translation": "житло",
-            "category": "Places",
-            "type": "noun",
-            "definition": "A place where someone lives."
-        },
-        {
-            "word": "whole",
-            "translation": "цілий",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "All of something; complete."
         },
         {
             "word": "breath",
@@ -804,20 +552,6 @@
             "category": "Animals",
             "type": "noun",
             "definition": "The thick hair that covers the bodies of some animals."
-        },
-        {
-            "word": "explore",
-            "translation": "досліджувати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To travel through a place to learn about it."
-        },
-        {
-            "word": "branch",
-            "translation": "гілка",
-            "category": "Nature/plants",
-            "type": "noun",
-            "definition": "A part of a tree."
         },
         {
             "word": "situated",
@@ -869,13 +603,6 @@
             "definition": "Everything in a cosmos is in a _______."
         },
         {
-            "word": "compare",
-            "translation": "порівнювати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To look at what is similar and different between things."
-        },
-        {
             "word": "improve",
             "translation": "покращувати",
             "category": "Verbs",
@@ -888,13 +615,6 @@
             "category": "Abstract nouns",
             "type": "noun",
             "definition": "The start of something."
-        },
-        {
-            "word": "ancestor",
-            "translation": "предок",
-            "category": "Family",
-            "type": "noun",
-            "definition": "A person in your family who lived a long time ago."
         },
         {
             "word": "prove",
@@ -1559,7 +1279,7 @@
             "translation": "жарити",
             "category": "Food",
             "type": "verb",
-            "definition": "Type of frying food."
+            "definition": "To fry food."
         },
         {
             "word": "giant",
@@ -1567,6 +1287,62 @@
             "category": "Adjectives",
             "type": "adjective",
             "definition": "A synonym of the word 'large / huge'."
+        },
+        {
+            "word": "law",
+            "translation": "закон",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A rule that exists in a country."
+        },
+        {
+            "word": "have to",
+            "translation": "потрібно / варто",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "A synonym of the word 'should'."
+        },
+        {
+            "word": "seat belt",
+            "translation": "ремінь безпеки",
+            "category": "Transport",
+            "type": "noun",
+            "definition": "Something that keeps you safe in a car."
+        },
+        {
+            "word": "vote",
+            "translation": "голосувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "An act of selectiong country's president and politicians."
+        },
+        {
+            "word": "earn",
+            "translation": "заробляти",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To make money."
+        },
+        {
+            "word": "fasten",
+            "translation": "пристегувати",
+            "category": "Transport",
+            "type": "verb",
+            "definition": "To use a seat belt."
+        },
+        {
+            "word": "scream",
+            "translation": "крик / кричати",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "To make a very loud sound."
+        },
+        {
+            "word": "mile",
+            "translation": "миля",
+            "category": "Geography",
+            "type": "noun",
+            "definition": "Something that is used to measure distance. 1 = 1.61 kilometers."
         }
     ]
 }
