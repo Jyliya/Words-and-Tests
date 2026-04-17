@@ -187,7 +187,6 @@ function checkAnswer(array) {
             break
         case "verbSecond":
             answer = dataVerbsArr[array[array.length - 1]].second;
-            console.log(answer);
             break
         case "verbThird":
             answer = dataVerbsArr[array[array.length - 1]].third;
@@ -237,8 +236,6 @@ function checkRand(num, array, max) {
 }//Перевірка на вже викликане питання
 
 function checkFullness(arrayQue, arrayWords, length) {
-    console.log(arrayWords);
-    console.log(arrayQue);
 
     if (arrayQue.length >= arrayWords.length) {
         console.log("yes");
