@@ -673,13 +673,6 @@
             "definition": "Decorative or expensive. Or to like something."
         },
         {
-            "word": "scratch",
-            "translation": "дряпати/чесати",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To make a mark by nails."
-        },
-        {
             "word": "borrow",
             "translation": "позичати (взяти)",
             "category": "Verbs",
@@ -692,13 +685,6 @@
             "category": "Verbs",
             "type": "verb",
             "definition": "To give something for some time to someone."
-        },
-        {
-            "word": "apart from",
-            "translation": "окремо/окрім",
-            "category": "Adverbs",
-            "type": "adverb",
-            "definition": "A synonym of the word 'besides'."
         },
         {
             "word": "upset",
@@ -729,13 +715,6 @@
             "definition": "To write a message on a phone."
         },
         {
-            "word": "crowd",
-            "translation": "натовп",
-            "category": "Objects/things",
-            "type": "noun",
-            "definition": "A large number of people gathered together."
-        },
-        {
             "word": "hurry",
             "translation": "поспішати",
             "category": "Verbs",
@@ -750,32 +729,11 @@
             "definition": "A synonym of the word 'responsible'."
         },
         {
-            "word": "unpleasant",
-            "translation": "неприємний",
-            "category": "Characteristics",
-            "type": "adjective",
-            "definition": "Causing discomfort or dislike."
-        },
-        {
             "word": "nauseous",
             "translation": "нудотний",
             "category": "Adjectives",
             "type": "adjective",
             "definition": "Feeling like you are going to vomit."
-        },
-        {
-            "word": "pass",
-            "translation": "складати (іспит)/проходити",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To succeed in a test or move past something."
-        },
-        {
-            "word": "flight",
-            "translation": "політ/рейс",
-            "category": "Transport",
-            "type": "noun",
-            "definition": "A journey through air, usually by plane."
         },
         {
             "word": "stock",
@@ -820,25 +778,11 @@
             "definition": "Jewelry worn on the ear."
         },
         {
-            "word": "broadcast",
-            "translation": "транслювати",
-            "category": "Technology/devices",
-            "type": "verb",
-            "definition": "To send out programs on TV, radio, or online."
-        },
-        {
             "word": "shy",
             "translation": "сором’язливий",
             "category": "Characteristics",
             "type": "adjective",
             "definition": "Nervous or uncomfortable with others."
-        },
-        {
-            "word": "brick",
-            "translation": "цегла",
-            "category": "Objects/things",
-            "type": "noun",
-            "definition": "A rectangular block used for building."
         },
         {
             "word": "chimney",
@@ -855,25 +799,11 @@
             "definition": "The ability to appreciate or express humor."
         },
         {
-            "word": "charger",
-            "translation": "зарядний пристрій",
-            "category": "Technology/devices",
-            "type": "noun",
-            "definition": "A device used to charge batteries/phones."
-        },
-        {
             "word": "sneeze",
             "translation": "чхати",
             "category": "Verbs",
             "type": "verb",
             "definition": "You do this when you are sick, or are in a dusty/stuffy place."
-        },
-        {
-            "word": "humid",
-            "translation": "вологий",
-            "category": "Weather/seasons",
-            "type": "adjective",
-            "definition": "Containing a lot of wetness in the air."
         },
         {
             "word": "cool",
@@ -890,13 +820,6 @@
             "definition": "The achievement of a goal."
         },
         {
-            "word": "sure",
-            "translation": "впевнений",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Certain about something."
-        },
-        {
             "word": "curiosity",
             "translation": "цікавість",
             "category": "Emotions/qualities",
@@ -909,20 +832,6 @@
             "category": "Characteristics",
             "type": "adjective",
             "definition": "Feeling sure about your abilities."
-        },
-        {
-            "word": "stupid",
-            "translation": "дурний",
-            "category": "Characteristics",
-            "type": "adjective",
-            "definition": "Not being smart/clever."
-        },
-        {
-            "word": "talkative",
-            "translation": "балакучий",
-            "category": "Characteristics",
-            "type": "adjective",
-            "definition": "Enjoying talking a lot."
         },
         {
             "word": "extraordinary",
@@ -951,13 +860,6 @@
             "category": "Professions",
             "type": "noun",
             "definition": "A person who serves food and drinks in a restaurant. Another word for 'waiter'."
-        },
-        {
-            "word": "huge",
-            "translation": "величезний",
-            "category": "Adjectives",
-            "type": "adjective",
-            "definition": "Very large in size."
         },
         {
             "word": "insect",
@@ -1002,46 +904,11 @@
             "definition": "A natural material used to make pottery or sculpture."
         },
         {
-            "word": "brush",
-            "translation": "пензлик",
-            "category": "Art",
-            "type": "noun",
-            "definition": "A tool used for painting."
-        },
-        {
-            "word": "surprisingly",
-            "translation": "дивно; несподівано",
-            "category": "Adverbs",
-            "type": "adverb",
-            "definition": "In an unexpected way."
-        },
-        {
-            "word": "choice",
-            "translation": "вибір",
-            "category": "Abstract nouns",
-            "type": "noun",
-            "definition": "An act of selecting between options."
-        },
-        {
             "word": "adult",
             "translation": "дорослий",
             "category": "Characteristics",
             "type": "noun",
             "definition": "A person who is fully grown."
-        },
-        {
-            "word": "compete",
-            "translation": "змагатися",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To try to win or be better than others."
-        },
-        {
-            "word": "fear",
-            "translation": "страх",
-            "category": "Emotions/qualities",
-            "type": "noun",
-            "definition": "An emotion you feel when you're scared."
         },
         {
             "word": "ripe",
@@ -1086,39 +953,11 @@
             "definition": "Not deep."
         },
         {
-            "word": "steep",
-            "translation": "крутий",
-            "category": "Geography",
-            "type": "adjective",
-            "definition": "Rising or falling sharply."
-        },
-        {
             "word": "landline",
             "translation": "стаціонарний телефон",
             "category": "Technology/devices",
             "type": "noun",
             "definition": "A telephone connected by cables."
-        },
-        {
-            "word": "campsite",
-            "translation": "місце для кемпінгу",
-            "category": "Places",
-            "type": "noun",
-            "definition": "An area where people can stay in tents or caravans."
-        },
-        {
-            "word": "weird",
-            "translation": "дивний",
-            "category": "Characteristics",
-            "type": "adjective",
-            "definition": "Unusual or strange."
-        },
-        {
-            "word": "tub",
-            "translation": "контейнер; коробка",
-            "category": "Food",
-            "type": "noun",
-            "definition": "A small plastic or paper container for food."
         },
         {
             "word": "tin",
@@ -1135,27 +974,6 @@
             "definition": "Small round green seeds eaten as a vegetable."
         },
         {
-            "word": "cauliflower",
-            "translation": "цвітна капуста",
-            "category": "Food",
-            "type": "noun",
-            "definition": "A white vegetable with a large head made up of small flower buds."
-        },
-        {
-            "word": "eggplant",
-            "translation": "баклажан",
-            "category": "Food",
-            "type": "noun",
-            "definition": "A dark purple vegetable."
-        },
-        {
-            "word": "folder",
-            "translation": "папка",
-            "category": "School",
-            "type": "noun",
-            "definition": "A container used for holding papers."
-        },
-        {
             "word": "tray",
             "translation": "піднос",
             "category": "Furniture/household items",
@@ -1170,13 +988,6 @@
             "definition": "To recognize the value or importance of something."
         },
         {
-            "word": "heating",
-            "translation": "опалення",
-            "category": "Furniture/household items",
-            "type": "noun",
-            "definition": "The system that warms a building."
-        },
-        {
             "word": "socket",
             "translation": "розетка",
             "category": "Furniture/household items",
@@ -1189,13 +1000,6 @@
             "category": "Furniture/household items",
             "type": "noun",
             "definition": "A metal device that gives off heat to warm a room."
-        },
-        {
-            "word": "teach",
-            "translation": "вчити",
-            "category": "Verbs",
-            "type": "verb",
-            "definition": "To help someone learn something."
         },
         {
             "word": "meal",
@@ -1217,13 +1021,6 @@
             "category": "Verbs",
             "type": "verb",
             "definition": "To apply something, like butter or jam, on a piece of bread."
-        },
-        {
-            "word": "pan",
-            "translation": "сковорода",
-            "category": "Furniture/household items",
-            "type": "noun",
-            "definition": "A flat metal container used for frying food."
         },
         {
             "word": "lid",
@@ -1343,6 +1140,76 @@
             "category": "Geography",
             "type": "noun",
             "definition": "Something that is used to measure distance. 1 = 1.61 kilometers."
+        },
+        {
+            "word": "opposite",
+            "translation": "напроти / протилежний",
+            "category": "Adverbs",
+            "type": "adverb",
+            "definition": "To be in front of something."
+        },
+        {
+            "word": "corner",
+            "translation": "вугол",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A point where edges/walls connect."
+        },
+        {
+            "word": "opinion",
+            "translation": "думка",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "Thoughts of someone."
+        },
+        {
+            "word": "generation",
+            "translation": "покоління",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A group of people that were born around the same time."
+        },
+        {
+            "word": "death",
+            "translation": "смерть",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "When someone dies."
+        },
+        {
+            "word": "die",
+            "translation": "помирати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To stop living."
+        },
+        {
+            "word": "scare",
+            "translation": "лякати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To make someone afraid."
+        },
+        {
+            "word": "harbor",
+            "translation": "гавань / пристань",
+            "category": "Places",
+            "type": "noun",
+            "definition": "A place where ships stay."
+        },
+        {
+            "word": "statue",
+            "translation": "статуя",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "An object made from a hard material that shows person/animal. Often in museums or as sights."
+        },
+        {
+            "word": "ruin",
+            "translation": "руїни",
+            "category": "Places",
+            "type": "noun",
+            "definition": "Remains of ancient buildings that hold historical importance."
         }
     ]
 }
