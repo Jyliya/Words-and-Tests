@@ -1210,6 +1210,132 @@
             "category": "Places",
             "type": "noun",
             "definition": "Remains of ancient buildings that hold historical importance."
+        },
+        {
+            "word": "bragin",
+            "translation": "вигідна покупка",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A good purchase with a nice price."
+        },
+        {
+            "word": "discount",
+            "translation": "скидка",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A lower price for a product."
+        },
+        {
+            "word": "price tag",
+            "translation": "цінник",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A piece of paper that displays price of a product."
+        },
+        {
+            "word": "receipt",
+            "translation": "чек'",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A piece of paper that shows how much money you've paid for something."
+        },
+        {
+            "word": "refund",
+            "translation": "повернення грошей",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A return of money for not suited bought product."
+        },
+        {
+            "word": "drug dealer",
+            "translation": "наркоторговець",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "A person who sels drugs."
+        },
+        {
+            "word": "murder",
+            "translation": "вбивство",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "An act of killing someone."
+        },
+        {
+            "word": "robbery",
+            "translation": "грабіж'",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "An act of stealing from someone."
+        },
+        {
+            "word": "shoplifting",
+            "translation": "крадіжка з магазину",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "An act of stealing from shops."
+        },
+        {
+            "word": "smuggling",
+            "translation": "контрабандування",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "An act of illegally getting producs into the country."
+        },
+        {
+            "word": "theft",
+            "translation": "крадіжка",
+            "category": "Crimes",
+            "type": "noun",
+            "definition": "An act of stealing."
+        },
+        {
+            "word": "break into",
+            "translation": "вламуватися",
+            "category": "Crimes",
+            "type": "verb",
+            "definition": "To get into someone's house without an invitation."
+        },
+        {
+            "word": "deal",
+            "translation": "справа'",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A business transaction, agreement, or bargain."
+        },
+        {
+            "word": "vandalise",
+            "translation": "займатися вандалізмом",
+            "category": "Crimes",
+            "type": "verb",
+            "definition": "An act of vandalising something."
+        },
+        {
+            "word": "camp",
+            "translation": "табір",
+            "category": "Places",
+            "type": "noun",
+            "definition": "A place for teenagers to spend summer."
+        },
+        {
+            "word": "teen",
+            "translation": "підліток",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A kid in age 14-18."
+        },
+        {
+            "word": "include",
+            "translation": "включати (в себе)",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To be part of something."
+        },
+        {
+            "word": "book",
+            "translation": "бронювати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To reserve."
         }
     ]
 }

@@ -46,6 +46,10 @@ header {
     #results {
         display: inline;
     }
+
+    .word-block {
+        max-width: 90%;
+    }
 }
 
 p {
@@ -237,4 +241,69 @@ button:hover{
 .wordlink {
     font-size: large;
     color: black;
+}
+
+#start-btn-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#start-btn {
+    padding: 10px;
+    font-size: x-large;
+}
+
+#game-block {
+    display: none;
+    text-align: center;
+}
+
+#score {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+#word-input {
+    font-size: large;
+    text-align: center;
+}
+
+.word-block {
+    display: inline-table;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 400px;
+}
+
+.gueesed {
+    display: inline-block;
+    font-size: larger;
+    background-color: lightgreen;
+    padding: 4px;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+.word-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.word-header {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.block-score {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: larger;
+    font-weight: bold;
 }
