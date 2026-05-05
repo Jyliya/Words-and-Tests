@@ -1,4 +1,5 @@
 let data = fetch("words_in_categories.json");
+let wonCategories = JSON.parse(localStorage.getItem("finished categories")) || [];
 let categories = [];
 let wordArrays = [];
 let gueesedWords = [];
@@ -20,10 +21,20 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 } // Get random number
 
+function checkRand(num, array1, array2) {
+    while (array1.includes(array2[num])) {
+        num = getRandom(0, array2.length - 1);
+    }
+    return num;
+}
+
 document.querySelector("#start-btn").addEventListener("click", () => {
+    if (wonCategories.length >= categories.length) {
+        wonCategories.length = 0;
+    }
     document.querySelector("#start-btn-block").style.display = "none";
     document.querySelector("#game-block").style.display = "block";
-    catNum = getRandom(0, categories.length - 1);
+    catNum = checkRand(getRandom(0, categories.length - 1), wonCategories, categories)
     document.querySelector("#category").textContent = categories[catNum];
     for (let i = 0; i < 15; i++) {
         if (fillWordBlock(i, catNum)) {
@@ -35,6 +46,18 @@ document.querySelector("#start-btn").addEventListener("click", () => {
 
 document.querySelector("#submit-btn").addEventListener("click", checkAnswer);
 
+document.querySelector("#hint-btn").addEventListener("click", () => {
+    let allGueesedWords = [];
+    document.querySelectorAll(".guessed").forEach(elem => {
+        allGueesedWords.push(elem.textContent)
+    });
+    let hintWordNum = checkRand(getRandom(0, wordArrays[catNum].length - 1), allGueesedWords, wordArrays[catNum]);
+    let hintWord = wordArrays[catNum][hintWordNum];
+    new swal({
+        title: createHint(hintWord)
+    })
+})
+
 document.querySelector("#word-input").addEventListener("keydown", (e) => {
     if (e.code == "Enter" || e.code == "NumpadEnter") {
         e.preventDefault();
@@ -42,17 +65,48 @@ document.querySelector("#word-input").addEventListener("keydown", (e) => {
     }
 })
 
+function createHint(word) {
+    let hint = '';
+    let beggining, number;
+    switch (true) {
+        case word.length <= 5:
+            beggining = word[0] + " ";
+            number = 2
+            break
+        case word.length > 5 && word.length <= 9:
+            beggining = word[0] + " " + word[1] + " " + word[2];
+            number = 4
+            break
+        case word.length > 9:
+            beggining = word[0] + " " + word[1] + " " + word[2] + " " + word[3];
+            number = 5
+            break
+    }
+    hint += beggining;
+    for (let i = 0; i < word.length - number; i++) {
+        hint += " — "
+    }
+    hint += word[word.length - 1]
+    return hint
+}
+
 function checkAnswer() {
-    let inputWord = document.querySelector("#word-input").value.trim().toLowerCase();
+    let inputWord;
+    if (categories[catNum] == "Countries" || categories[catNum] == "School") {
+        inputWord = document.querySelector("#word-input").value.trim()
+    }
+    else {
+        inputWord = document.querySelector("#word-input").value.trim().toLowerCase();
+    }
     if (wordArrays[catNum].includes(inputWord) && !gueesedWords.includes(inputWord)) {
-        let wordDiv = document.querySelector(`#words-${inputWord.length}`)
-        let wordBlock = createWordP(inputWord, "gueesed");
+        let wordDiv = document.querySelector(`#words-${inputWord.length}`);
+        let wordBlock = createWordP(inputWord, "guessed");
         wordDiv.appendChild(wordBlock);
 
         addPoints(`#words-${inputWord.length}-score`, 1);
         addPoints("#points", 5);
         checkPoints();
-        gueesedWords.push(inputWord)
+        gueesedWords.push(inputWord);
     }
     document.querySelector("#word-input").value = "";
 }
@@ -66,6 +120,8 @@ function addPoints(id, point) {
 
 function checkPoints() {
     if (document.querySelector("#points").textContent == (maxPoints / 2)) {
+        wonCategories.push(categories[catNum])
+        localStorage.setItem("finished categories", (JSON.stringify(wonCategories)));
         new swal({
             title: "Congratulations!",
             text: 'You gueesed all words.',
