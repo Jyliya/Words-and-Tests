@@ -67,26 +67,31 @@ document.querySelector("#word-input").addEventListener("keydown", (e) => {
 
 function createHint(word) {
     let hint = '';
-    let beggining, number;
-    switch (true) {
-        case word.length <= 5:
-            beggining = word[0] + " ";
-            number = 2
-            break
-        case word.length > 5 && word.length <= 9:
-            beggining = word[0] + " " + word[1] + " " + word[2];
-            number = 4
-            break
-        case word.length > 9:
-            beggining = word[0] + " " + word[1] + " " + word[2] + " " + word[3];
-            number = 5
-            break
+    let len = word.length;
+    let start, end;
+
+    if (len <= 5) {
+        start = 1;
+        end = len - 2;
+    } else if (len <= 9) {
+        start = 3;
+        end = len - 2;
+    } else {
+        start = 4;
+        end = len - 3;
     }
-    hint += beggining;
-    for (let i = 0; i < word.length - number; i++) {
-        hint += " — "
+
+    for (let i = 0; i < len; i++) {
+        if (i < start || i > end) {
+            hint += word[i] + " ";
+        } else if (word[i] === " " && len > 5) {
+            hint += "\n" + word[i + 1] + " ";
+            i++;
+        } else {
+            hint += " — ";
+        }
     }
-    hint += word[word.length - 1]
+
     return hint
 }
 
@@ -172,7 +177,7 @@ function fillWordBlock(num, categ) {
     if (index != 0) {
         maxPoints = maxPoints + index * 5;
         let headerDiv = createDiv("word-block-header");
-        headerDiv.appendChild(createWordP(`${num}-letter words`, "word-header"));
+        headerDiv.appendChild(createWordP(`${num}-symbol words`, "word-header"));
         headerDiv.appendChild(createScore(index, num));
         div.appendChild(headerDiv);
         div.id = `words-${num}`;
