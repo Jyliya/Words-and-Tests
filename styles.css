@@ -2,7 +2,7 @@ body {
     margin-top: 0px;
 }
 
-a {
+header a {
     font-size: x-large;
     padding: 5px;
     margin: 10px;
@@ -86,15 +86,25 @@ div {
     padding: 10px;
 }
 
+#sentence-test-link {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    border: 3px solid lightcoral;
+    font-size: larger;
+    color:unset;
+    text-decoration: none;
+    padding: 2px;
+}
+
+#sentence-test-link:hover {
+    background-color: lightcoral;
+    cursor:default;
+}
+
 input {
     margin: 5px;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-}
-
-button {
-    font-size: large;
-    margin: 5px;
 }
 
 select {
@@ -164,6 +174,7 @@ h1 {
 }
 
 button {
+    margin: 5px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 8px;
     border: 3px solid lightcoral;
@@ -298,4 +309,37 @@ button:hover{
     margin-bottom: 2px;
     font-size: larger;
     font-weight: bold;
+}
+
+#questions {
+    font-size: larger;
+    text-align: right;
+    margin: 5px;
+}
+
+#answer-btn,
+#sentence {
+    margin: 5px;
+}
+
+#answer-input {
+    font-size: large;
+}
+
+#question-block {
+    max-width: 600px;
+    max-height: 600px;
+    align-self: center;
+    margin: auto;
+    margin-top: 12%;
+    border: 2px solid black;
+    padding: 2%;
+    display: none;
+}
+
+#answer-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
 }
