@@ -1252,6 +1252,34 @@
             "category": "Characteristics",
             "type": "adjective",
             "definition": "A synonym of the word 'ill'."
+        },
+        {
+            "word": "pigeon",
+            "translation": "голуб",
+            "category": "Animals",
+            "type": "noun",
+            "definition": "A type of a bird."
+        },
+        {
+            "word": "skyscraper",
+            "translation": "хмарочос",
+            "category": "Places",
+            "type": "noun",
+            "definition": "A very high building."
+        },
+        {
+            "word": "plumber",
+            "translation": "сантехник",
+            "category": "Professions",
+            "type": "noun",
+            "definition": "A person who works with pipes."
+        },
+        {
+            "word": "pipe",
+            "translation": "труба",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "An object that's used to carry water ot other liquids."
         }
     ]
 }
