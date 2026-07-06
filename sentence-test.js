@@ -104,8 +104,6 @@ function getAVerb() {
         verb = verbs[randNum2];
         usedVerbs.push(randNum2);
     }
-    console.log(verb)
-    console.log(usedVerbs)
     return verb
 }
 
