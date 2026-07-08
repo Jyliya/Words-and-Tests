@@ -104,7 +104,7 @@ function addEndingForPS(word) {
 
 function getAVerb() {
     let verb;
-    let randNum = checkRand(getRandom(0, 12), usedVerbs, verbs.length - 1);
+    let randNum = checkRand(getRandom(0, 12), usedVerbs, 12);
     let randNum2 = checkRand(getRandom(0, verbs.length - 1), usedVerbs, verbs.length - 1);
     if (tense.name.includes("Continuous")) {
         verb = verbs[randNum];
