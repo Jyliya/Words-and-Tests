@@ -16,6 +16,12 @@ data
     })
     .catch(error => console.error(error));
 
+document.querySelector("#instructionAgreeBtn").addEventListener("click", () => {
+    if (document.querySelector("#instructionCheck").checked) {
+        localStorage.setItem("categoryInstructions", (true));
+    }
+    document.querySelector("#instruction-box").style.display = "none";
+})
 
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);

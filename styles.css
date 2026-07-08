@@ -343,3 +343,23 @@ button:hover{
     margin: 0px;
     padding: 0px;
 }
+
+#instruction-box {
+    text-align: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+
+    border: 2px solid black;
+    width: 400px;
+    z-index: 10;
+    background-blend-mode: color;
+    backdrop-filter: blur(3px);
+    background: rgba(184, 59, 59, 0.2);
+    display: block;
+}

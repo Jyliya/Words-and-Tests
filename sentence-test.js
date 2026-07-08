@@ -2,7 +2,7 @@ let sentence = document.querySelector("#sentence");
 let nextBtn = document.querySelector("#answer-btn");
 let tenseName = document.querySelector("#tenseName");
 let questionNum = document.querySelector("#question-num");
-let answer, tense;
+let answer, tense, typesNum;
 let correctCount = 0;
 let usedTenses = [], usedVerbs = [];
 
@@ -40,9 +40,19 @@ irrVerbs
     .catch(error => console.error(error));
 
 
+document.querySelector("#instructionAgreeBtn").addEventListener("click", () => {
+    if (document.querySelector("#instructionCheck").checked) {
+        localStorage.setItem("sentenceInstructions", (true));
+    }
+    document.querySelector("#instruction-box").style.display = "none";
+})
+
+
 document.querySelector("#start-btn").addEventListener("click", () => {
     document.querySelector("#start-btn-block").style.display = "none";
     document.querySelector("#question-block").style.display = "block";
+    if (document.querySelector("#questionCheck").checked) { typesNum = 2 }
+    else { typesNum = 1 }
     nextBtn.click()
 })
 
@@ -109,7 +119,7 @@ function getAVerb() {
 
 function generateSentence() {
     let type = nounTypes[getRandom(0, 1)];
-    let sentenceType = sentenceTypes[getRandom(0, 1)];
+    let sentenceType = sentenceTypes[getRandom(0, typesNum)];
     let randNumForTense = checkRand(getRandom(0, tenses.length - 1), usedTenses, tenses.length - 1)
     tense = tenses[randNumForTense];
 
@@ -181,11 +191,24 @@ function generateSentence() {
 
     if (keyword["position"] != "beginning" && sentenceType != "Question") { noun = capitalizeAWord(noun) }
 
-    question += verbFullObj["verb"];
-    sentence.textContent = noun + " " + "_________ " + `(${question})` + " " + object + "."
-
     usedTenses.push(randNumForTense);
-    return modalVerd + " " + answer
+    question += verbFullObj["verb"];
+    if (sentenceType == "Affirmative" || sentenceType == "Negative") {
+        sentence.textContent = noun + " " + "_________ " + `(${question})` + " " + object + ".";
+        return modalVerd + " " + answer
+    }
+    else if (sentenceType == "Question") {
+        let questionVerb;
+        sentence.textContent = "_________ " + noun + " " + "_________ " + `(${question})` + " " + object + "?";
+        if (tense["question"]) { questionVerb = tense["question"] }
+        else if (tense[`question${type}`]) { questionVerb = tense[`question${type}`] }
+
+        if (tense.name == "Future Continuous") { answer = "be " + answer }
+        else if (tense.name == "Present Perfect Continuous") { answer = "been " + answer }
+
+        console.log(questionVerb + " " + noun + modalVerd + " " + answer);
+        return questionVerb + " " + noun + modalVerd + " " + answer
+    }
 }
 
 function checkAnswer(answer) {

@@ -34,4 +34,13 @@ document.querySelector("#mode").addEventListener("click", () => {
     }
 })
 
-
+if (window.location.pathname == "/Words-and-Tests/sentence-test.html") {
+    if (localStorage.getItem("sentenceInstructions")) {
+        document.querySelector("#instruction-box").style.display = "none";
+    }
+}
+if (window.location.pathname == "/Words-and-Tests/name-all-words.html") {
+    if (localStorage.getItem("categoryInstructions")) {
+        document.querySelector("#instruction-box").style.display = "none";
+    }
+}
