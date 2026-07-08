@@ -191,14 +191,6 @@
             ]
         },
         {
-            "verb": "agree",
-            "objects": [
-                "with the plan",
-                "with the decision",
-                "with the idea"
-            ]
-        },
-        {
             "verb": "ask",
             "objects": [
                 "for help",
@@ -350,10 +342,10 @@
             "verb": "open",
             "objects": [
                 "the door",
-                "a window",
-                "a book",
-                "a gift",
-                "a box",
+                "windows",
+                "books",
+                "gifts",
+                "boxes",
                 "the shop"
             ]
         },
@@ -541,6 +533,8 @@
             "name": "Present Simple",
             "beforeVerbNegativeSingular": "doesn't",
             "beforeVerbNegativePlural": "don't",
+            "questionSingular": "Does",
+            "questionPlural": "Do",
             "keywords": [
                 {
                     "keyword": "always",
@@ -634,6 +628,7 @@
             "beforeVerbNegative": "didn't",
             "verbEnding": "ed",
             "form": "second",
+            "question": "Did",
             "keywords": [
                 {
                     "keyword": "yesterday",
@@ -704,6 +699,7 @@
             "name": "Future Simple",
             "beforeVerbAffirmative": "will",
             "beforeVerbNegative": "won't",
+            "question": "Will",
             "keywords": [
                 {
                     "keyword": "tomorrow",
@@ -777,6 +773,8 @@
             "beforeVerbNegativeSingular": "isn't",
             "beforeVerbNegativePlural": "aren't",
             "verbEnding": "ing",
+            "questionSingular": "Is",
+            "questionPlural": "Are",
             "keywords": [
                 {
                     "keyword": "now",
@@ -810,8 +808,7 @@
                     "position": "beginning",
                     "sentenceType": [
                         "Affirmative",
-                        "Negative",
-                        "Question"
+                        "Negative"
                     ]
                 }
             ]
@@ -822,6 +819,8 @@
             "beforeVerbAffirmativePlural": "were",
             "beforeVerbNegativeSingular": "wasn't",
             "beforeVerbNegativePlural": "weren't",
+            "questionSingular": "Was",
+            "questionPlural": "Were",
             "verbEnding": "ing",
             "keywords": [
                 {
@@ -885,6 +884,7 @@
             "beforeVerbAffirmative": "will be",
             "beforeVerbNegative": "won't be",
             "verbEnding": "ing",
+            "question": "Will",
             "keywords": [
                 {
                     "keyword": "tomorrow at 5am",
@@ -932,6 +932,8 @@
             "beforeVerbNegativePlural": "haven't",
             "verbEnding": "ed",
             "form": "third",
+            "questionSingular": "Has",
+            "questionPlural": "Have",
             "keywords": [
                 {
                     "keyword": "already",
@@ -997,6 +999,7 @@
             "beforeVerbNegative": "hadn't",
             "verbEnding": "ed",
             "form": "third",
+            "question": "Had",
             "keywords": [
                 {
                     "keyword": "by the time the day ended",
@@ -1030,8 +1033,7 @@
                     "position": "beginning",
                     "sentenceType": [
                         "Affirmative",
-                        "Negative",
-                        "Question"
+                        "Negative"
                     ]
                 }, 
                 {
@@ -1039,8 +1041,7 @@
                     "position": "beginning",
                     "sentenceType": [
                         "Affirmative",
-                        "Negative",
-                        "Question"
+                        "Negative"
                     ]
                 }
             ]
@@ -1052,6 +1053,8 @@
             "beforeVerbNegativeSingular": "hasn't been",
             "beforeVerbNegativePlural": "haven't been",
             "verbEnding": "ing",
+            "questionSingular": "Has",
+            "questionPlural": "Have",
             "keywords": [
                 {
                     "keyword": "since last night",
@@ -1083,4 +1086,5 @@
             ]
         }
     ]
+
 }
