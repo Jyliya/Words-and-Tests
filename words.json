@@ -897,7 +897,7 @@
             "definition": "Remains of ancient buildings that hold historical importance."
         },
         {
-            "word": "bragin",
+            "word": "bargain",
             "translation": "вигідна покупка",
             "category": "Abstract nouns",
             "type": "noun",
@@ -919,7 +919,7 @@
         },
         {
             "word": "receipt",
-            "translation": "чек'",
+            "translation": "чек",
             "category": "Objects/things",
             "type": "noun",
             "definition": "A piece of paper that shows how much money you've paid for something."
@@ -947,7 +947,7 @@
         },
         {
             "word": "robbery",
-            "translation": "грабіж'",
+            "translation": "грабіж",
             "category": "Crimes",
             "type": "noun",
             "definition": "An act of stealing from someone."
@@ -982,7 +982,7 @@
         },
         {
             "word": "deal",
-            "translation": "справа'",
+            "translation": "справа",
             "category": "Abstract nouns",
             "type": "noun",
             "definition": "A business transaction, agreement, or bargain."
@@ -1079,7 +1079,7 @@
             "definition": "A living area that's close to the city."
         },
         {
-            "word": "Crime",
+            "word": "crime",
             "translation": "злочин",
             "category": "Abstract nouns",
             "type": "noun",
