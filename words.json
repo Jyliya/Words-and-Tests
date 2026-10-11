@@ -1280,6 +1280,538 @@
             "category": "Objects/things",
             "type": "noun",
             "definition": "An object that's used to carry water ot other liquids."
+        },
+        {
+            "word": "awful",
+            "translation": "жахливий",
+            "category": "Adjectives",
+            "type": "adjective",
+            "definition": "Very bad or unpleasant."
+        },
+        {
+            "word": "balance",
+            "translation": "баланс / балансувати",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "To keep something equal."
+        },
+        {
+            "word": "parcel",
+            "translation": "посилка",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A package or item that is sent by mail."
+        },
+        {
+            "word": "delivery",
+            "translation": "доставка",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "The action of delivering something."
+        },
+        {
+            "word": "deliver",
+            "translation": "доставляти",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To transport and hand over something to a person or place."
+        },
+        {
+            "word": "sewers",
+            "translation": "каналізація",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A system of pipes that carry away wastewater."
+        },
+        {
+            "word": "babysit",
+            "translation": "доглядати за дитиною",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To look after a child."
+        },
+        {
+            "word": "forecast",
+            "translation": "прогноз",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A prediction about future weather."
+        },
+        {
+            "word": "give up",
+            "translation": "здаватися",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To stop trying to do something."
+        },
+        {
+            "word": "couple",
+            "translation": "пара",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "Two people who are in a romantic relationship. Or two things that go together."
+        },
+        {
+            "word": "apply for",
+            "translation": "подавати заявку",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To submit an application for a job."
+        },
+        {
+            "word": "drugstore",
+            "translation": "аптека",
+            "category": "Places",
+            "type": "noun",
+            "definition": "A shop that sells medicines and other healthcare products."
+        },
+        {
+            "word": "tax",
+            "translation": "податок",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A sum of money required by the government."
+        },
+        {
+            "word": "you're welcome",
+            "translation": "будь ласка",
+            "category": "Exclamations",
+            "type": "exclamation",
+            "definition": "A response to thanks."
+        },
+        {
+            "word": "during",
+            "translation": "впродовж / під час",
+            "category": "Time",
+            "type": "adverb",
+            "definition": "At some time in the middle of something."
+        },
+        {
+            "word": "poor",
+            "translation": "бідний",
+            "category": "Adjectives",
+            "type": "adjective",
+            "definition": "Lacking money or resources."
+        },
+        {
+            "word": "polite",
+            "translation": "ввічливий",
+            "category": "Adjectives",
+            "type": "adjective",
+            "definition": "An antonym of the word 'rude'."
+        },
+        {
+            "word": "easygoing",
+            "translation": "добродушний / легкий в спілкуванні",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "Easy to get along with."
+        },
+        {
+            "word": "generous",
+            "translation": "щедрий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "Willing to give more than is necessary or expected."
+        },
+        {
+            "word": "diary",
+            "translation": "щоденник",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A book in which one writes down daily events or thoughts."
+        },
+        {
+            "word": "completely",
+            "translation": "повністю",
+            "category": "Adverbs",
+            "type": "adverb",
+            "definition": "Fully."
+        },
+        {
+            "word": "forever",
+            "translation": "вічно",
+            "category": "Time",
+            "type": "adverb",
+            "definition": "At all times; always."
+        },
+        {
+            "word": "wheel",
+            "translation": "колесо",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A circular object that spins."
+        },
+        {
+            "word": "entertainment",
+            "translation": "розваги",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "Activities that provide enjoyment or relaxation."
+        },
+        {
+            "word": "advantage",
+            "translation": "перевага",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A plus / a pro(s)."
+        },
+        {
+            "word": "disadvantage",
+            "translation": "недолік",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A minus / a con(s)."
+        },
+        {
+            "word": "appear",
+            "translation": "з'являтися",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To come into view or to become visible."
+        },
+        {
+            "word": "disappear",
+            "translation": "зникати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To stop being visible or present."
+        },
+        {
+            "word": "temple",
+            "translation": "храм",
+            "category": "Places",
+            "type": "noun",
+            "definition": "A religious building."
+        },
+        {
+            "word": "quantity",
+            "translation": "кількість",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "An amount or number of something."
+        },
+        {
+            "word": "muscle",
+            "translation": "м’яз",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "Huge part of a body. Can be trained to become stronger."
+        },
+        {
+            "word": "jog",
+            "translation": "займатися бігом",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To run."
+        },
+        {
+            "word": "fat",
+            "translation": "товстий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "A person who has a lot of weight."
+        },
+        {
+            "word": "slim",
+            "translation": "тонкий / худий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "A person who has little weight."
+        },
+        {
+            "word": "midnight",
+            "translation": "північ",
+            "category": "Time",
+            "type": "noun",
+            "definition": "The time at 12:00 AM."
+        },
+        {
+            "word": "repair",
+            "translation": "ремонтувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To fix or restore something."
+        },
+        {
+            "word": "although",
+            "translation": "хоча",
+            "category": "Conjunctions",
+            "type": "conjunction",
+            "definition": "Despite the fact that."
+        },
+        {
+            "word": "cheat",
+            "translation": "списувати / обманювати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To deceive or trick someone."
+        },
+        {
+            "word": "lecture",
+            "translation": "лекція",
+            "category": "School",
+            "type": "noun",
+            "definition": "A long lesson with an explanation of a topic."
+        },
+        {
+            "word": "accuse",
+            "translation": "звинувачувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To say someone did something (criminal)."
+        },
+        {
+            "word": "blood",
+            "translation": "кров",
+            "category": "Body parts",
+            "type": "noun",
+            "definition": "The red liquid that flows in us."
+        },
+        {
+            "word": "decision",
+            "translation": "рішення",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A choice or judgment."
+        },
+        {
+            "word": "interview",
+            "translation": "співбесіда",
+            "category": "Work",
+            "type": "noun",
+            "definition": "A meeting for the purpose of hiring someone."
+        },
+        {
+            "word": "release",
+            "translation": "випускати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To publish something (like a game/book...)."
+        },
+        {
+            "word": "bills",
+            "translation": "рахунки",
+            "category": "Work",
+            "type": "noun",
+            "definition": "Something that a person needs to pay every month (like rent, for electricity...)."
+        },
+        {
+            "word": "burglar",
+            "translation": "грабіжник",
+            "category": "People",
+            "type": "noun",
+            "definition": "A person who breaks into a building to steal."
+        },
+        {
+            "word": "coward",
+            "translation": "трус",
+            "category": "People",
+            "type": "noun",
+            "definition": "A person who shows fear or has no courage."
+        },
+        {
+            "word": "rent",
+            "translation": "оренда / орендувати",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "The money paid for using a property (house, apartment, car...)."
+        },
+        {
+            "word": "tenant",
+            "translation": "орендар",
+            "category": "People",
+            "type": "noun",
+            "definition": "A person who rents a property (house, apartment, car...)."
+        },
+        {
+            "word": "disappoint",
+            "translation": "розчарувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To cause someone to feel sad or let them down."
+        },
+        {
+            "word": "prepare",
+            "translation": "готувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To make something ready for use."
+        },
+        {
+            "word": "through",
+            "translation": "через / крізь",
+            "category": "Adverbs",
+            "type": "adverb",
+            "definition": "Movement from one side to the other."
+        },
+        {
+            "word": "artificial",
+            "translation": "штучний",
+            "category": "Adjectives",
+            "type": "adjective",
+            "definition": "Not natural; made by humans."
+        },
+        {
+            "word": "biscuit",
+            "translation": "печиво",
+            "category": "Food",
+            "type": "noun",
+            "definition": "A small, flat, round cookie."
+        },
+        {
+            "word": "hedgehog",
+            "translation": "єж",
+            "category": "Animals",
+            "type": "noun",
+            "definition": "A small animal with a coat of sharp quills."
+        },
+        {
+            "word": "breed",
+            "translation": "порода",
+            "category": "Animals",
+            "type": "noun",
+            "definition": "A type of an animal."
+        },
+        {
+            "word": "weak",
+            "translation": "слабкий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "Not strong; lacking power or force."
+        },
+        {
+            "word": "accept",
+            "translation": "приймати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To take or receive something."
+        },
+        {
+            "word": "replace",
+            "translation": "замінювати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To put something in the place of something else. To change."
+        },
+        {
+            "word": "scissors",
+            "translation": "ножиці",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "A tool with two blades used for cutting."
+        },
+        {
+            "word": "allow",
+            "translation": "дозволяти",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To let something happen."
+        },
+        {
+            "word": "guinea pig",
+            "translation": "морська свинка",
+            "category": "Animals",
+            "type": "noun",
+            "definition": "A small animal kept as a pet."
+        },
+        {
+            "word": "conversation",
+            "translation": "розмова",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A talk between two or more people."
+        },
+        {
+            "word": "find out",
+            "translation": "дізнатися",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To discover or learn information about something."
+        },
+        {
+            "word": "adopt",
+            "translation": "усиновлювати / удочеряти",
+            "category": "Family",
+            "type": "verb",
+            "definition": "To take someone else's child and raise them as your own."
+        },
+        {
+            "word": "jealous",
+            "translation": "заздрісний / ревнивий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To not want other people to have what you want (or what you have)."
+        },
+        {
+            "word": "mean",
+            "translation": "злий",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To be unkind."
+        },
+        {
+            "word": "loyal",
+            "translation": "відданий / вірний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To be always on someone's side."
+        },
+        {
+            "word": "honest",
+            "translation": "правдивий / чесний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To not lie."
+        },
+        {
+            "word": "dishonest",
+            "translation": "неправдивий / нечесний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To lie or be untruthful."
+        },
+        {
+            "word": "land",
+            "translation": "земля",
+            "category": "Places",
+            "type": "noun",
+            "definition": "The solid part of the Earth's surface."
+        },
+        {
+            "word": "shout",
+            "translation": "кричати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To speak loudly."
+        },
+        {
+            "word": "follow",
+            "translation": "слідувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To go after or accompany someone."
+        },
+        {
+            "word": "turn",
+            "translation": "повертатися",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To change direction or position."
+        },
+        {
+            "word": "push",
+            "translation": "штовхати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To move someone or something by force."
+        },
+        {
+            "word": "abroad",
+            "translation": "закордоном",
+            "category": "Places",
+            "type": "noun",
+            "definition": "Outside one's own country."
         }
     ]
 }
