@@ -1662,14 +1662,14 @@
         {
             "word": "hedgehog",
             "translation": "єж",
-            "category": "Animals",
+            "category": "Pets",
             "type": "noun",
             "definition": "A small animal with a coat of sharp quills."
         },
         {
             "word": "breed",
             "translation": "порода",
-            "category": "Animals",
+            "category": "Pets",
             "type": "noun",
             "definition": "A type of an animal."
         },
@@ -1711,7 +1711,7 @@
         {
             "word": "guinea pig",
             "translation": "морська свинка",
-            "category": "Animals",
+            "category": "Pets",
             "type": "noun",
             "definition": "A small animal kept as a pet."
         },
