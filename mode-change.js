@@ -46,10 +46,10 @@ if (window.location.pathname == "/Words-and-Tests/name-all-words.html") {
 }
 
 window.addEventListener("load", () => {
-    createImg("/cobweb.png", "cobweb");
-    createImg("/cobweb2.png", "cobwebTwo");
-    createImg("/skeleton.gif", "skeleton");
-    createImg("/bat.gif", "bat");
+    createImg("/Words-and-Tests/cobweb.png", "cobweb");
+    createImg("/Words-and-Tests/cobweb2.png", "cobwebTwo");
+    createImg("/Words-and-Tests/skeleton.gif", "skeleton");
+    createImg("/Words-and-Tests/bat.gif", "bat");
 })
 
 function createImg (src, id) {
