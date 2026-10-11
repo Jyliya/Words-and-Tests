@@ -23,39 +23,6 @@ header {
     background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    #definitions {
-        display: none;
-    }
-
-    li,
-    label {
-        padding: 3px;
-        font-size: medium;
-    }
-
-    label {
-        font-size: large;
-    }
-
-    ul {
-        display: inline-table;
-        list-style: none;
-    }
-
-    a {
-        font-size: large;
-    }
-
-    #results {
-        display: inline;
-    }
-
-    .word-block {
-        max-width: 90%;
-    }
-}
-
 p {
     display: inline;
     font-size: large;
@@ -232,7 +199,7 @@ button:hover{
     background-color: rgb(227, 108, 108);
 }
 
-.headline {
+.headlineTB {
     font-weight: bold;
 }
 
@@ -363,4 +330,225 @@ button:hover{
     backdrop-filter: blur(3px);
     background: rgba(184, 59, 59, 0.2);
     display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    left: 8px;
+    border: 2px solid black;
+    border-top: none;
+    background-color: #999494ab;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 0px 10px;
+}
+
+.grammarLink {
+    display: block;
+    text-decoration: underline;
+    font-size: 20px;
+    color:seagreen;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.grammarLink:hover {
+    color:darkred;
+    text-decoration: underline;
+}
+
+.headline {
+    text-align: center;
+    color: darkcyan;
+}
+
+.content {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.segment-headline {
+    text-align: left;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.example {
+    display: block;
+    text-align: left;
+    font-size: large;
+    margin-left: 5%;
+    background-color: rgb(243, 243, 243);
+    max-width: max-content;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+.rule {
+    font-weight: bold;
+}
+
+.important-rule {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 188, 118);
+    border: 3px solid red;
+    display: block;
+}
+
+span {
+    color: red;
+}
+
+li {
+    font-size: large;
+}
+
+.li-headline {
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.rules-tb {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 99%;
+    max-width: 99%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+.rules-tb td {
+    border: 2px solid black;
+}
+
+.rules-tb p {
+    font-size: medium;
+    color: rgb(103, 102, 102);
+}
+
+.links {
+    display: grid;
+    grid-auto-rows: 4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 15px;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+.decoration {
+    z-index: 1;
+    position: fixed;
+    pointer-events: none;
+}
+#cobweb {
+    top: 0;
+    left: 0;
+    width: 350px;
+}
+
+#cobwebTwo {
+    top: 0;
+    right: 0;
+    width: 350px;
+}
+
+#skeleton {
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+#bat {
+    bottom: 0;
+    left: 0;
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    #definitions {
+        display: none;
+    }
+
+    label {
+        padding: 3px;
+        font-size: large;
+    }
+
+    a {
+        font-size: large;
+    }
+
+    #results {
+        display: inline;
+    }
+
+    .word-block {
+        max-width: 90%;
+    }
+
+     .sidebar {
+        display: none;
+    }
+
+    .content {
+        text-align: left;
+        margin: 3%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0px;
+    }
+
+    .rules-tb td, .rules-tb p {
+        font-size: medium;
+    }
+
+    .links {
+        display: block;
+        padding: 0;
+    }
+
+    #cobweb {
+        width: 150px;
+    }
+
+    #cobwebTwo {
+        width: 150px;
+    }
+
+    #skeleton {
+        width: 200px;
+    }
+
+    #bat {
+        display: none;
+    }
 }

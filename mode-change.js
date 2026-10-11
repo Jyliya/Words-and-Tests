@@ -44,3 +44,18 @@ if (window.location.pathname == "/Words-and-Tests/name-all-words.html") {
         document.querySelector("#instruction-box").style.display = "none";
     }
 }
+
+window.addEventListener("load", () => {
+    createImg("/cobweb.png", "cobweb");
+    createImg("/cobweb2.png", "cobwebTwo");
+    createImg("/skeleton.gif", "skeleton");
+    createImg("/bat.gif", "bat");
+})
+
+function createImg (src, id) {
+    let img = document.createElement("img");
+    img.src = src;
+    img.classList.add("decoration");
+    img.id = id;
+    document.body.appendChild(img);
+}
