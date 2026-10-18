@@ -11,7 +11,8 @@ let irrVerbs = fetch("verbs.json");
 let tryN = localStorage.getItem("number of tries");
 let irrVerArr = [], nouns = [], verbs = [], tenses = [];
 let nounTypes = ["Singular", "Plural"];
-let sentenceTypes = ["Affirmative", "Negative", "Question"]
+let sentenceTypes = ["Affirmative"];
+let chosenTenses = [];
 let alphabet = { "a": "A", "b": "B", "c": "C", "d": "D", "e": "E", "f": "F", "g": "G", "h": "H", "i": "I", "j": "J", "k": "K", "l": "L", "m": "M", "n": "N", "o": "O", "p": "P", "q": "Q", "r": "R", "s": "S", "t": "T", "u": "U", "v": "V", "w": "W", "x": "X", "y": "Y", "z": "Z" }
 let vowels = ["a", "o", "u", "i", "e"];
 
@@ -47,12 +48,33 @@ document.querySelector("#instructionAgreeBtn").addEventListener("click", () => {
     document.querySelector("#instruction-box").style.display = "none";
 })
 
+document.querySelector("#settingsBtn").addEventListener("click", () => {
+    document.querySelector("#settings-box").style.display = "block";
+})
+
+document.querySelector("#settingsCloseBtn").addEventListener("click", () => {
+    chosenTenses = [];
+    const allTenses = document.querySelectorAll('input[name="tense"]');
+    allTenses.forEach(checkbox => {
+        if (checkbox.checked) {
+            chosenTenses.push(checkbox.value);
+        }
+    });
+
+    sentenceTypes = ["Affirmative"];
+    const allTypes = document.querySelectorAll('input[name="type"]');
+    allTypes.forEach(checkbox => {
+        if (checkbox.checked) {
+            sentenceTypes.push(checkbox.value);
+        }
+    });
+    document.querySelector("#settings-box").style.display = "none";
+})
+
 
 document.querySelector("#start-btn").addEventListener("click", () => {
     document.querySelector("#start-btn-block").style.display = "none";
     document.querySelector("#question-block").style.display = "block";
-    if (document.querySelector("#questionCheck").checked) { typesNum = 2 }
-    else { typesNum = 1 }
     nextBtn.click()
 })
 
@@ -118,10 +140,11 @@ function getAVerb() {
 }
 
 function generateSentence() {
+    if (chosenTenses.length == 0) {document.querySelectorAll('input[name="tense"]').forEach(elem => {chosenTenses.push(elem.value)})}
     let type = nounTypes[getRandom(0, 1)];
-    let sentenceType = sentenceTypes[getRandom(0, typesNum)];
-    let randNumForTense = checkRand(getRandom(0, tenses.length - 1), usedTenses, tenses.length - 1)
-    tense = tenses[randNumForTense];
+    let sentenceType = sentenceTypes[getRandom(0, sentenceTypes.length-1)];
+    let randNumForTense = checkRand(getRandom(0, chosenTenses.length - 1), usedTenses, chosenTenses.length - 1)
+    tense = tenses.find(item => item.name === chosenTenses[randNumForTense]);;
 
     if (tense.name == "Present Perfect Continuous" && sentenceType == "Negative") {
         sentenceType = "Affirmative";

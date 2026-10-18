@@ -312,7 +312,7 @@ button:hover{
     padding: 0px;
 }
 
-#instruction-box {
+.overlay-box {
     text-align: center;
     margin: auto;
     top: 0;
@@ -320,8 +320,8 @@ button:hover{
     left: 0;
     right: 0;
     position: absolute;
-    width: max-content;
     height: max-content;
+    padding: 10px;
 
     border: 2px solid black;
     width: 400px;
@@ -330,6 +330,31 @@ button:hover{
     backdrop-filter: blur(3px);
     background: rgba(184, 59, 59, 0.2);
     display: block;
+}
+
+#settings-box {
+    display: none;
+}
+
+#settingsBtn {
+    border: 1px solid rgb(98, 26, 255);
+    font-size: medium;   
+}
+
+#settingsBtn:hover {
+    background-color: rgb(184, 151, 255);
+}
+
+.setting {
+    display: grid;
+    grid-auto-rows: 2fr;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0px;
+    text-align:center;
+}
+
+.setting li {
+    list-style-type: none;
 }
 
 h2 {

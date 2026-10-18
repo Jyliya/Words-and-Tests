@@ -19,30 +19,84 @@
         <a href="name-all-words.html">Guessing game</a>
         <a id="results" href="results.html">Results</a>
     </header>
-    <div id="mode-block"><button id="mode" value="Night mode">Night mode</button></div>
-    
-    <div id="instruction-box">
+    <div id="smt">
+        <div id="settings-block"><button class="settings" id="settingsBtn">Settings</button></div>
+        <div id="mode-block"><button id="mode" value="Night mode">Night mode</button></div>
+    </div>
+
+    <div id="instruction-box" class="overlay-box">
         <h1>Правила</h1>
         <p>1. Уважно прочитай речення.</p> <br />
         <p>2. Визнач час дієслова в реченні.</p> <br />
         <p>3. Запиши правильний час в пусте поле.</p> <br />
-        <p>4. Якщо речення є питанням, потрібно також записати підмет.</p> <br /> <br /> 
+        <p>4. Якщо речення є питанням, потрібно також записати підмет.</p> <br /> <br />
         <input type="checkbox" id="instructionCheck" />
         <label for="instructionCheck">Не показувати знову.</label> <br />
         <button id="instructionAgreeBtn">Ок</button>
     </div>
 
+    <div id="settings-box" class="overlay-box">
+        <h1>Часи</h1>
+        <ul class="setting">
+            <li>
+                <input type="checkbox" id="PresentS" value="Present Simple" name="tense" />
+                <label for="PresentS">Present Simple</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PastS" value="Past Simple" name="tense" />
+                <label for="PastS">Past Simple</label>
+            </li>
+            <li>
+                <input type="checkbox" id="FutureS" value="Future Simple" name="tense" />
+                <label for="FutureS">Future Simple</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PresentC" value="Present Continuous" name="tense" />
+                <label for="PresentC">Present Continuous</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PastC" value="Past Continuous" name="tense" />
+                <label for="PastC">Past Continuous</label>
+            </li>
+            <li>
+                <input type="checkbox" id="FutureC" value="Future Continuous" name="tense" />
+                <label for="FutureC">Future Continuous</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PresentP" value="Present Perfect" name="tense" />
+                <label for="PresentP">Present Perfect</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PastP" value="Past Perfect" name="tense" />
+                <label for="PastP">Past Perfect</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PresentPC" value="Present Perfect Continuous" name="tense" />
+                <label for="PresentPC">Present Perfect Con.</label>
+            </li>
+        </ul>
+        <h1>Види речень</h1>
+        <ul class="setting">
+            <li>
+                <input type="checkbox" id="Negative" value="Negative" name="type" />
+                <label for="Negative">Negative</label>
+            </li>
+            <li>
+                <input type="checkbox" id="Question" value="Question" name="type" />
+                <label for="Question">Question</label>
+            </li>
+        </ul>
+        <button id="settingsCloseBtn">Ок</button>
+    </div>
+
     <div id="start-btn-block">
-        <div>
-            <button id="start-btn">Start</button> <br />
-            <input type="checkbox" id="questionCheck" />
-            <label for="questionCheck">With questions</label>
-        </div>
+        <button id="start-btn">Start</button> <br />
+
     </div>
 
     <div id="question-block">
-        <p id="sentence"></p> <br/>
-        <input id="answer-input" type="text" spellcheck="false" autocomplete="off" /> <br/>
+        <p id="sentence"></p> <br />
+        <input id="answer-input" type="text" spellcheck="false" autocomplete="off" /> <br />
         <div id="answer-block">
             <button id="answer-btn">Next</button>
             <p id="questions">Questions: <span id="question-num">0</span>/20</p>
@@ -51,7 +105,7 @@
 
     <div id="congratulation-block">
         <h1>Congratulations!</h1>
-        <p>Ти вказав час правильно в <span id="correct-count">0</span> реченнях з 20!</p> <br/> <br/>
+        <p>Ти вказав час правильно в <span id="correct-count">0</span> реченнях з 20!</p> <br /> <br />
         <button>OK</button>
     </div>
 
