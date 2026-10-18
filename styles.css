@@ -321,7 +321,6 @@ button:hover{
     right: 0;
     position: absolute;
     height: max-content;
-    padding: 10px;
 
     border: 2px solid black;
     width: 400px;
