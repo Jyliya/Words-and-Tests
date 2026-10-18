@@ -604,6 +604,33 @@
                     ]
                 },
                 {
+                    "keyword": "on Tuesdays",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "on Fridays",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "on Sundays",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "in the morning",
                     "position": "after",
                     "sentenceType": [
@@ -676,6 +703,33 @@
                     ]
                 },
                 {
+                    "keyword": "5 months ago",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "7 weeks ago",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "2 years ago",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "in 2025",
                     "position": "after",
                     "sentenceType": [
@@ -685,7 +739,43 @@
                     ]
                 },
                 {
+                    "keyword": "in 2007",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "in 2022",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "last Tuesday",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "last Thursday",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "last Saturday",
                     "position": "after",
                     "sentenceType": [
                         "Affirmative",
@@ -756,7 +846,43 @@
                     ]
                 },
                 {
+                    "keyword": "in 2035",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "in 2030",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "next Wednesday",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "next Friday",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "next Sunday",
                     "position": "after",
                     "sentenceType": [
                         "Affirmative",
@@ -804,6 +930,15 @@
                     ]
                 },
                 {
+                    "keyword": "at present",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "Look,",
                     "position": "beginning",
                     "sentenceType": [
@@ -833,6 +968,15 @@
                     ]
                 },
                 {
+                    "keyword": "yesterday at 9am",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "last night at 1am",
                     "position": "after",
                     "sentenceType": [
@@ -842,7 +986,25 @@
                     ]
                 },
                 {
+                    "keyword": "last night at 12pm",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "while I was sleeping",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "while we were playing",
                     "position": "after",
                     "sentenceType": [
                         "Affirmative",
@@ -869,7 +1031,34 @@
                     ]
                 },
                 {
+                    "keyword": "last Monday at 2am",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "last Wednesday at 11pm",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "when the box fell",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "when I came",
                     "position": "after",
                     "sentenceType": [
                         "Affirmative",
@@ -896,6 +1085,15 @@
                     ]
                 },
                 {
+                    "keyword": "tomorrow at 9pm",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "next week at 8pm",
                     "position": "after",
                     "sentenceType": [
@@ -914,7 +1112,34 @@
                     ]
                 },
                 {
+                    "keyword": "next Wednesday at 11pm",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "next Tuesday at 1am",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
                     "keyword": "while I will be sleeping",
+                    "position": "after",
+                    "sentenceType": [
+                        "Affirmative",
+                        "Negative",
+                        "Question"
+                    ]
+                },
+                {
+                    "keyword": "while we will be working",
                     "position": "after",
                     "sentenceType": [
                         "Affirmative",
