@@ -122,10 +122,25 @@ h1 {
     text-align: center;
 }
 
-#result-box {
-    margin: auto;
+.results-box {
+    display: flex;
+    justify-content: center;
+}
+
+.results-box div {
     padding: 10px;
-    max-width: 300px;
+    margin: 10px;
+}
+
+#senteces-p {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#button-box {
+    text-align: center;
 }
 
 #result-table td {
@@ -530,12 +545,22 @@ li {
         display: inline;
     }
 
+    .results-box {
+        display: grid;
+        justify-content: center;
+    }
+
+    .results-box div{
+        width: max-content;
+        margin: auto;
+    }
+
     .word-block {
         max-width: 90%;
     }
 
-     .sidebar {
-        display: none;
+    .overlay-box {
+        max-width: 99%;
     }
 
     .content {

@@ -270,6 +270,14 @@ function endTest() {
             nextBtn.textContent = "Next"
         });
         const d = new Date();
+        
+        let results = JSON.parse(localStorage.getItem("results"));        
+        if (results != null) {
+            results[`${d.getDay()}`] = 1;
+            results["Sentences"] = 1;
+            localStorage.setItem("results", JSON.stringify(results));
+        }
+
         tryN++;
         localStorage.setItem("number of tries", (JSON.stringify(tryN)));
         document.cookie = `result${tryN}-sentences-${d.getDate()}_${d.getMonth()}=${correctCount}; max-age=604800;`

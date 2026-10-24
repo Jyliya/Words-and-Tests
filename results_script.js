@@ -77,3 +77,36 @@ function createTd(item, tr) {
     tr.append(td)
 
 }
+
+const dayResults = JSON.parse(localStorage.getItem("results"));
+
+const days = document.querySelectorAll(".days")
+if (dayResults != null) {
+    let daysIndex = 0;
+    for (const day of days) {
+        if (dayResults[`${daysIndex}`] == 1) {
+            day.textContent = "Yes";
+        }
+        daysIndex++;
+    }
+
+    if (dayResults["Sentences"] == 1) {
+        document.querySelector("#sentences").textContent = "Yes";
+    }
+}
+
+if (dayResults["Sentences"] == 1) {
+    document.querySelector("#sentences").textContent = "Yes";
+}
+
+document.querySelector("#clear-btn").addEventListener("click", () => {
+    localStorage.setItem("results", JSON.stringify({"1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "0": 0, "Sentences": 0}))
+    window.location.reload()
+})
+
+document.addEventListener("keydown", (e) => {
+    if (e.code == "KeyC" && e.shiftKey) {
+        localStorage.setItem("results", JSON.stringify({"1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "0": 0, "Sentences": 0}))
+        window.location.reload()
+    }
+})

@@ -20,14 +20,56 @@
     </header>
     <div id="mode-block"><button id="mode" value="Night mode">Night mode</button></div>
     <h1>Results</h1>
-    <div id="result-box">
-        <table id="result-table">
-            <tr>
-                <td class="name">Date</td>
-                <td class="name">Type</td>
-                <td class="name">Result</td>
-            </tr>
-        </table>
+    <div class="results-box">
+        <div id="result-box">
+            <table id="result-table">
+                <tr>
+                    <td class="name">Date</td>
+                    <td class="name">Type</td>
+                    <td class="name">Result</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="result-table">
+                <tr>
+                    <td class="name">Day</td>
+                    <td class="name">Yes/No</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td id="sun" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td id="mon" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Tueday</td>
+                    <td id="tue" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td id="wed" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td id="thu" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td id="fri" class="days">No</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td id="sat" class="days">No</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p id="senteces-p">Sentences: <span id="sentences">No</span></p>
+    <div id="button-box">
+        <button id="clear-btn">Clear</button>
     </div>
     <script src="results_script.js"></script>
     <script src="mode-change.js"></script>
