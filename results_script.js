@@ -95,10 +95,6 @@ if (dayResults != null) {
     }
 }
 
-if (dayResults["Sentences"] == 1) {
-    document.querySelector("#sentences").textContent = "Yes";
-}
-
 document.querySelector("#clear-btn").addEventListener("click", () => {
     localStorage.setItem("results", JSON.stringify({"1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "0": 0, "Sentences": 0}))
     window.location.reload()
