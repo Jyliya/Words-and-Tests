@@ -59,3 +59,9 @@ function createImg (src, id) {
     img.id = id;
     document.body.appendChild(img);
 }
+
+const resultsD = JSON.parse(localStorage.getItem("results"));
+
+if (resultsD == null) {
+    localStorage.setItem("results", JSON.stringify({"1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "0": 0, "Sentences": 0}))
+}
