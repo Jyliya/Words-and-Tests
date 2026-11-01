@@ -45,21 +45,6 @@ if (window.location.pathname == "/Words-and-Tests/name-all-words.html") {
     }
 }
 
-window.addEventListener("load", () => {
-    createImg("/Words-and-Tests/cobweb.png", "cobweb");
-    createImg("/Words-and-Tests/cobweb2.png", "cobwebTwo");
-    createImg("/Words-and-Tests/skeleton.gif", "skeleton");
-    createImg("/Words-and-Tests/bat.gif", "bat");
-})
-
-function createImg (src, id) {
-    let img = document.createElement("img");
-    img.src = src;
-    img.classList.add("decoration");
-    img.id = id;
-    document.body.appendChild(img);
-}
-
 const resultsD = JSON.parse(localStorage.getItem("results"));
 
 if (resultsD == null) {
