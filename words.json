@@ -1812,6 +1812,251 @@
             "category": "Places",
             "type": "noun",
             "definition": "Outside one's own country."
+        },
+        {
+            "word": "greedy",
+            "translation": "жадібний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "An antonym of the word 'generous'."
+        },
+        {
+            "word": "hood",
+            "translation": "капюшон",
+            "category": "Clothes",
+            "type": "noun",
+            "definition": "A part of clothes that covers your head."
+        },
+        {
+            "word": "repeat",
+            "translation": "повторювати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To do one action again."
+        },
+        {
+            "word": "require",
+            "translation": "вимагати / потребувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "A synonym of the word 'need'."
+        },
+        {
+            "word": "volunteer",
+            "translation": "волонтер / волонтерствувати",
+            "category": "Professions",
+            "type": "noun",
+            "definition": "A person who helps/works for free."
+        },
+        {
+            "word": "depend",
+            "translation": "залежати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To count on/trust someone or something."
+        },
+        {
+            "word": "gentle",
+            "translation": "ніжний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "A person who is kind and soft."
+        },
+        {
+            "word": "memory",
+            "translation": "пам'ять / спогади",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "Something that you can remember."
+        },
+        {
+            "word": "solve",
+            "translation": "вирішувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To deal with something (exercises, problems)."
+        },
+        {
+            "word": "education",
+            "translation": "освіта",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "An act of studying."
+        },
+        {
+            "word": "in general",
+            "translation": "загалом / взагалі",
+            "category": "Phrases/expressions",
+            "type": "phrase",
+            "definition": "For the most part."
+        },
+        {
+            "word": "thorn",
+            "translation": "шип / колючка",
+            "category": "Nature/plants",
+            "type": "noun",
+            "definition": "A sharp part of a flower or a plant."
+        },
+        {
+            "word": "cause",
+            "translation": "спичиняти",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To be the reason of something."
+        },
+        {
+            "word": "complain",
+            "translation": "скаржитися",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To say or write that you are unhappy, sick, uncomfortable."
+        },
+        {
+            "word": "yawn",
+            "translation": "позіхати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "Something that you do when you're sleepy."
+        },
+        {
+            "word": "grave",
+            "translation": "могила",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "Something that tells you about a person when you visit a graveyard."
+        },
+        {
+            "word": "embassy",
+            "translation": "посольство",
+            "category": "Places",
+            "type": "noun",
+            "definition": "The building where an ambassador lives and works."
+        },
+        {
+            "word": "regret",
+            "translation": "жалкувати",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To be very sorry for."
+        },
+        {
+            "word": "root",
+            "translation": "корінь",
+            "category": "Nature/plants",
+            "type": "noun",
+            "definition": "The underground part of a plant."
+        },
+        {
+            "word": "rope",
+            "translation": "мотузка",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "Something that is used to pull things up."
+        },
+        {
+            "word": "promise",
+            "translation": "обіцяти / обіцянка",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To say you will do something."
+        },
+        {
+            "word": "tear",
+            "translation": "сльоза",
+            "category": "Body parts",
+            "type": "noun",
+            "definition": "Something that comes out of eyes when you cry."
+        },
+        {
+            "word": "bell",
+            "translation": "дзвоник",
+            "category": "Objects/things",
+            "type": "noun",
+            "definition": "Something that rings in a church."
+        },
+        {
+            "word": "sunrise",
+            "translation": "схід сонця",
+            "category": "Nature/plants",
+            "type": "noun",
+            "definition": "When sun comes out."
+        },
+        {
+            "word": "sunset",
+            "translation": "захід сонця",
+            "category": "Nature/plants",
+            "type": "noun",
+            "definition": "When sun sets."
+        },
+        {
+            "word": "pickles",
+            "translation": "соління / солені огурці",
+            "category": "Food",
+            "type": "noun",
+            "definition": "Marinated vegetables."
+        },
+        {
+            "word": "except",
+            "translation": "крім як",
+            "category": "Adverbs",
+            "type": "adverb",
+            "definition": "A synonym of the words 'besides' and 'apart from'."
+        },
+        {
+            "word": "social media",
+            "translation": "соц. мережі",
+            "category": "Technology/devices",
+            "type": "noun",
+            "definition": "Apps like Instagram and Facebook."
+        },
+        {
+            "word": "app",
+            "translation": "додаток",
+            "category": "Technology/devices",
+            "type": "noun",
+            "definition": "Programme that you can download on your phone or computer."
+        },
+        {
+            "word": "limb",
+            "translation": "кінцівка",
+            "category": "Body parts",
+            "type": "noun",
+            "definition": "A part of a body (leg, arm)."
+        },
+        {
+            "word": "attention",
+            "translation": "увага",
+            "category": "Abstract nouns",
+            "type": "noun",
+            "definition": "A state when you see and hear something."
+        },
+        {
+            "word": "pay attention to",
+            "translation": "приділяти увагу",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To focus on something."
+        },
+        {
+            "word": "guilty",
+            "translation": "винний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To be responsible for something."
+        },
+        {
+            "word": "innocent",
+            "translation": "невинний",
+            "category": "Characteristics",
+            "type": "adjective",
+            "definition": "To not be guilty."
+        },
+        {
+            "word": "judge",
+            "translation": "судити / суддя",
+            "category": "Verbs",
+            "type": "verb",
+            "definition": "To form an opinion about (something or someone) after careful thought."
         }
     ]
 }
